@@ -10,11 +10,14 @@ h4{
   font-family: helvetica;
 }
 h6 {
-
   font-family: times;
 
 }
 
+form{
+
+  width: 75%;
+}
 p  {
   color: Blue;
   font-family: verdana;
