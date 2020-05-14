@@ -3,10 +3,12 @@ body {
 }
 h1 {
   color: blue;
-  font-family: verdana;
+  font-family: helvetica;
   font-size: 300%;
 }
-
+h4{
+  font-family: helvetica;
+}
 h6 {
 
   font-family: times;
@@ -21,7 +23,7 @@ p  {
 
 div {
   border: 1px outset black;
-  background-color: lightblue;
+  background-color: white;
   text-align: center;
   margin-bottom: 4px
 }
