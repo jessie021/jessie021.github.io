@@ -7,14 +7,14 @@ h1 {
   font-size: 300%;
 }
 p  {
-  color: red;
+  color: Blue;
   font-family: verdana;
   font-size: 160%;
 }
 
 div {
   border: 1px outset black;
-  background-color: lightgreen;
+  background-color: lightblue;
   text-align: center;
 }
 
@@ -24,7 +24,7 @@ button{
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  background-color: green;
+  background-color: white;
   display: inline-block;
   font-size: 14px;
   margin: 4px 2px;
