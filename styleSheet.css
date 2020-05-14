@@ -3,11 +3,11 @@ body {
 }
 h1 {
   color: Black;
-  font-family: verdana;
+  font-family: sans-serif;
   font-size: 300%;
 }
-h4{
-  font-family: helvetica;
+h4, h2, h3, h5{
+  font-family: sans-serif;
 }
 h6 {
   font-family: times;
