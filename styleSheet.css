@@ -1,7 +1,7 @@
 body {
   background-color: lightblue;
-
 }
+
 h1 {
   color: blue;
   font-family: helvetica;
@@ -17,7 +17,8 @@ h6 {
 form{
   width: 75%;
 }
-p  {
+
+p{
   color: Blue;
   font-family: verdana;
   font-size: 160%;
