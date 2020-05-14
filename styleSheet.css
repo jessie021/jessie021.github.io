@@ -1,5 +1,5 @@
 body {
-  background-color: powderblue;
+  background-color: white;
 }
 h1 {
   color: blue;
@@ -56,4 +56,11 @@ table{
 
 td,  th{
   text-align: left;
+}
+
+textarea {
+  resize:vertical;
+
+  max-height: 300px
+
 }
