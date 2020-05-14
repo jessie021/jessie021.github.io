@@ -1,0 +1,33 @@
+body {
+  background-color: powderblue;
+}
+h1 {
+  color: blue;
+  font-family: verdana;
+  font-size: 300%;
+}
+p  {
+  color: red;
+  font-family: verdana;
+  font-size: 160%;
+}
+
+div {
+  border: 1px outset black;
+  background-color: lightgreen;
+  text-align: center;
+}
+
+button{
+  border: 1px;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  background-color: green;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+}
