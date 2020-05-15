@@ -1,12 +1,12 @@
 body {
-  background-color: gray;
+  background-color: white;
 }
 
 h1 {
-  color: blue;
+  color: grey;
   font-family: verdana;
-  font-size: 250%;
-  
+  font-size: 100%;
+
 }
 h4, h2, h3, h5{
   font-family: verdana;
