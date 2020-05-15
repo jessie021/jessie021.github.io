@@ -4,12 +4,12 @@ body {
 
 h1 {
   color: blue;
-  font-family: helvetica;
+  font-family: verdana;
   font-size: 250%;
-  font-weight: 100;
+  
 }
 h4, h2, h3, h5{
-  font-family: helvetica;
+  font-family: verdana;
 }
 h6 {
   font-family: times;
@@ -22,7 +22,7 @@ form{
 p{
   color: Blue;
   font-family: verdana;
-  font-size: 160%;
+  font-size: 100%;
 }
 
 div {
