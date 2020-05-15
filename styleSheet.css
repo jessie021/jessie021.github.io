@@ -5,9 +5,8 @@ h1 {
 }
 h4, h2, h3, h5{
   font-family: verdana;
-}
-h6 {
-  font-family: times;
+  color: green;
+  font-size: 60%
 }
 
 form{
