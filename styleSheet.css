@@ -1,5 +1,5 @@
 body {
-  background-color: lightblue;
+  background-color: grey;
 }
 
 h1 {
@@ -25,7 +25,7 @@ p{
 }
 
 div {
-  border: 1px outset black;
+  border: 1px outset green;
   border-radius: 25px;
   background-color: white;
   text-align: center;
