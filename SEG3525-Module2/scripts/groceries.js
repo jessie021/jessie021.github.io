@@ -86,10 +86,13 @@ var organicTrue = false;
 // given restrictions provided, make a reduced list of products
 // prices should be included in this list, as well as a sort based on price
 function setOrganicToTrue(){
-  if (organicTrue == false){
+
+  organicTrue = document.getElementsByName("orgranicOnly");
+
+  if (organicTrue[0].checked){
     organicTrue = true;
   }else{
-    organicTrue = false
+    organicTrue = false;
   }
 }
 
@@ -105,7 +108,7 @@ for (let i=0; i<prods.length; i+=1) {
   }else if ((restriction == "GlutenFree&Vegetarian") && (prods[i].vegetarian == true)  && (prods[i].glutenFree == true) && (organicTrue == prods[i].organic)){
     product_names.push(prods[i].name);
   }
-  else if (restriction == "None"){
+  else if (restriction == "None" && (organicTrue == prods[i].organic)){
     product_names.push(prods[i].name);
   }
 }
