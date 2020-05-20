@@ -94,14 +94,22 @@ function setOrganicToTrue(){
   }else{
     organicTrue = false;
   }
+
 }
 
 function restrictListProducts(prods, restriction) {
 let product_names = [];
 
 for (let i=0; i<prods.length; i+=1) {
-  if ((restriction == "Vegetarian") && (prods[i].vegetarian == true) && (organicTrue == prods[i].organic)){
-    product_names.push(prods[i].name);
+  if ((restriction == "Vegetarian") && (prods[i].vegetarian == true) ){
+    if (organicTrue == true){
+      if ((organicTrue == prods[i].organic)){
+        product_names.push(prods[i].name);
+      }
+    }else{
+      product_names.push(prods[i].name);
+    }
+
   }
   else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true) && (organicTrue == prods[i].organic)){
     product_names.push(prods[i].name);
