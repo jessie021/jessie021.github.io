@@ -80,6 +80,8 @@ for (let i=0; i<prods.length; i+=1) {
   }
   else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
     product_names.push(prods[i].name);
+  }else if ((restriction == "Vegetarian") && (prods[i].vegetarian == true) && (restriction == "GlutenFree") && (prods[i].glutenFree == true)){
+    product_names.push(prods[i].name);
   }
   else if (restriction == "None"){
     product_names.push(prods[i].name);
