@@ -86,10 +86,10 @@ var organicTrue = false;
 // given restrictions provided, make a reduced list of products
 // prices should be included in this list, as well as a sort based on price
 function setOrganicToTrue(){
-  if (organicTrue == true){
-    organicTrue = false;
+  if (organicTrue == false){
+    organicTrue = true;
   }else{
-    organicTrue = true
+    organicTrue = false
   }
 }
 
