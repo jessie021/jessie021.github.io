@@ -91,7 +91,6 @@ function setOrganicToTrue(){
   }else{
     organicTrue = true
   }
-  organicTrue = true
 }
 
 function restrictListProducts(prods, restriction) {
