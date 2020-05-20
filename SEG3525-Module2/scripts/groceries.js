@@ -87,7 +87,7 @@ var organicTrue = false;
 // prices should be included in this list, as well as a sort based on price
 function setOrganicToTrue(){
 
-   organicTrue = document.getElementsByName("organicOnly");
+  organicTrue = document.getElementsById("organicOnly");
 
   if (organicTrue[0].checked){
     organicTrue = true;
