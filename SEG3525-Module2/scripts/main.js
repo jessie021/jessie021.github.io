@@ -44,6 +44,7 @@ function populateListProductChoices(slct1, slct2) {
 	for (i = 0; i < optionArray.length; i++) {
 
 		var productName = optionArray[i];
+		
 		// create the checkbox and add in HTML DOM
 		var checkbox = document.createElement("input");
 		checkbox.type = "checkbox";
