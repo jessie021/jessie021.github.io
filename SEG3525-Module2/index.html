@@ -31,6 +31,15 @@
 		<option value="GlutenFree&Vegetarian">Vegetarian & GlutenFree</option>
     <option value="None">None</option>
 	</select>
+
+	//organic optioin
+	Choose an Option:
+	<select id="OrganicSelect" name="OrganicSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
+	<option value=""></option>
+	<option value="organic">Organic</option>
+		<option value="norganic">Not-organic</option>
+
+	</select>
 </div>
 
 <div id="Products" class="tabcontent">
