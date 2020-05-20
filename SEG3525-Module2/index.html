@@ -33,11 +33,11 @@
 	</select>
 
 	<br>
-	Choose an Option:
-	<select id="OrganicSelect" name="OrganicSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
-		<option value="organic">Organic</option>
-		<option value="norganic">Not-organic</option>
-	</select>
+	Organic only?:
+	<input type= "radio" id="Organic" name="Organic" onselect= "Organic(this.id)">
+		<option value="yes">Yes</option>
+		<option value="no">No</option>
+	</input>
 </div>
 
 <div id="Products" class="tabcontent">
