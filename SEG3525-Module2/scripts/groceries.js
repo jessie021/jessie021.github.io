@@ -87,9 +87,10 @@ var organicTrue = false;
 // prices should be included in this list, as well as a sort based on price
 function setOrganicToTrue(){
 
+  //code suivant inspirer du lien https://www.w3schools.com/howto/howto_js_display_checkbox_text.asp
   organicTrue = document.getElementsById("organicOnly");
 
-  if (organicTrue[0].checked){
+  if (organicTrue.checked == true){
     organicTrue = true;
   }else{
     organicTrue = false;
