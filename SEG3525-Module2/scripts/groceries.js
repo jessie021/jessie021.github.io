@@ -81,19 +81,23 @@ var products = [
 }
 ];
 
-var organicTrue = true;
+var globalOrganicTrue;
 
 // given restrictions provided, make a reduced list of products
 // prices should be included in this list, as well as a sort based on price
 function setOrganicToTrue(){
+
   //code suivant inspirer du lien https://www.w3schools.com/howto/howto_js_display_checkbox_text.asp
-  organicTrue = document.getElementsById("organicOnly");
+  var organicTrue = document.getElementsById("organicOnly");
 
   if (organicTrue.checked == true){
     organicTrue = true;
   }else{
-    organicTrue = false;
+    organicTrue = true;
   }
+
+  globalOrganicTrue = organicTrue;
+
 
 }
 
@@ -103,7 +107,7 @@ let product_price = [];
 for (let i=0; i<prods.length; i+=1) {
   if ((restriction == "Vegetarian") && (prods[i].vegetarian == true) ){
 
-    if (organicTrue == true){
+    if (globalOrganicTrue == true){
       if ((prods[i].organic == true)){
         product_names.push(prods[i].name);
       }
@@ -118,7 +122,8 @@ for (let i=0; i<prods.length; i+=1) {
     product_names.push(prods[i].name);
   }
   else if (restriction == "None" && (organicTrue == prods[i].organic)){
-    if (organicTrue == true){
+
+    if (globalOrganicTrue == true){
       if ((prods[i].organic == true)){
         product_names.push(prods[i].name);
       }
