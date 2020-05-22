@@ -93,7 +93,7 @@ function setOrganicToTrue(){
   if (organicTrue.checked == true){
     organicTrue = true;
   }else{
-    organicTrue = true;
+    organicTrue = false;
   }
 
   globalOrganicTrue = organicTrue;
