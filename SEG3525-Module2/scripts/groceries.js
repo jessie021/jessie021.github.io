@@ -100,7 +100,7 @@ function setOrganicToTrue(){
 
 function restrictListProducts(prods, restriction) {
 let product_names = [];
-
+let product_price = [];
 for (let i=0; i<prods.length; i+=1) {
   if ((restriction == "Vegetarian") && (prods[i].vegetarian == true) ){
     if (organicTrue == true){
@@ -121,6 +121,12 @@ for (let i=0; i<prods.length; i+=1) {
     product_names.push(prods[i].name);
   }
 }
+
+//inspired by https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+product_names.sort(function (a, b) {
+  return a.price - b.price;
+});
+
 return product_names;
 }
 
