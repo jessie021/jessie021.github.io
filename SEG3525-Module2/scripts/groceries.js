@@ -88,13 +88,7 @@ var globalOrganicTrue;
 function setOrganicToTrue(){
 
   //code suivant inspirer du lien https://www.w3schools.com/howto/howto_js_display_checkbox_text.asp
-  var organicTrue = document.getElementsById("organicOnly");
-
-  if (organicTrue.checked == true){
-    organicTrue = true;
-  }else{
-    organicTrue = false;
-  }
+  var organicTrue = document.getElementsById("organicOnly").checked;
 
   globalOrganicTrue = organicTrue;
 
