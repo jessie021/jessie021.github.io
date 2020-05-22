@@ -103,7 +103,7 @@ function setOrganicToTrue(){
 
 function restrictListProducts(prods, restriction) {
 let product_names = [];
-let product_price = [];
+
 for (let i=0; i<prods.length; i+=1) {
   if ((restriction == "Vegetarian") && (prods[i].vegetarian == true) ){
 
@@ -121,7 +121,7 @@ for (let i=0; i<prods.length; i+=1) {
   }else if ((restriction == "GlutenFree&Vegetarian") && (prods[i].vegetarian == true)  && (prods[i].glutenFree == true) && (organicTrue == prods[i].organic)){
     product_names.push(prods[i].name);
   }
-  else if (restriction == "None" && (organicTrue == prods[i].organic)){
+  else if (restriction == "None" ){
 
     if (globalOrganicTrue == true){
       if ((prods[i].organic == true)){
