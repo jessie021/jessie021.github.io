@@ -52,7 +52,7 @@ function populateListProductChoices(slct1, slct2) {
 		checkbox.type = "checkbox";
 		checkbox.name = "product";
 		checkbox.value = productName;
-		checkbox.price =
+
 		s2.appendChild(checkbox);
 
 		// create a label for the checkbox, and also add in HTML DOM
