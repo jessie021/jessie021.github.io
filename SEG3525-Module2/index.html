@@ -24,7 +24,7 @@
   <h3>Client Information</h3>
   <p>Tell us a bit about you.</p>
 	Choose a Category:
-	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
+	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct', 'displayPrice')">
 	<option value=""></option>
 	<option value="Vegetarian">Vegetarian</option>
     <option value="GlutenFree">GlutenFree</option>
@@ -34,7 +34,7 @@
 
 	<br>
 	Organic Items Only:
-	<input type= "checkbox" id="organicOnly" name="organicOnly" onclick=""="setOrganicToTrue()">
+	<input type= "checkbox" id="organicOnly" name="organicOnly" onclick="setOrganicToTrue()">
 	</input>
 </div>
 
@@ -42,7 +42,7 @@
   <h3>Your targeted products</h3>
   <p>We preselected products based on your restrictions.</p>
 	 Choose items to buy:
-	 <div id="displayProduct" id="displayPrice"></div>
+	 <div id="displayProduct" id= "displayPrice"> </div>
 
 	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
 		Add selected items to cart.
