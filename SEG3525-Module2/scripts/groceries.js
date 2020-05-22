@@ -90,8 +90,8 @@ function setOrganicToTrue(){
   //code suivant inspirer du lien https://www.w3schools.com/howto/howto_js_display_checkbox_text.asp
   var organicTrue = document.getElementsById("organicOnly");
 
-  if (organicTrue.checked == true){
-    organicTrue = true;
+  if (organicTrue.checked == false){
+    organicTrue = false;
   }else{
     organicTrue = false;
   }
@@ -116,10 +116,22 @@ for (let i=0; i<prods.length; i+=1) {
     }
 
   }
-  else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true) && (organicTrue == prods[i].organic)){
-    product_names.push(prods[i].name);
-  }else if ((restriction == "GlutenFree&Vegetarian") && (prods[i].vegetarian == true)  && (prods[i].glutenFree == true) && (organicTrue == prods[i].organic)){
-    product_names.push(prods[i].name);
+  else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
+    if (globalOrganicTrue == true){
+      if ((prods[i].organic == true)){
+        product_names.push(prods[i].name);
+      }
+    }else{
+      product_names.push(prods[i].name);
+    }
+  }else if ((restriction == "GlutenFree&Vegetarian") && (prods[i].vegetarian == true)  && (prods[i].glutenFree == true) ){
+    if (globalOrganicTrue == true){
+      if ((prods[i].organic == true)){
+        product_names.push(prods[i].name);
+      }
+    }else{
+      product_names.push(prods[i].name);
+    }
   }
   else if (restriction == "None" ){
 
