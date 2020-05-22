@@ -85,7 +85,7 @@ var globalOrganicTrue;
 
 // given restrictions provided, make a reduced list of products
 // prices should be included in this list, as well as a sort based on price
-function setOrganicToTrue(){
+function checked(){
 
   //code suivant inspirer du lien https://www.w3schools.com/howto/howto_js_display_checkbox_text.asp
   var organicTrue = document.getElementsById("organicOnly").checked;
