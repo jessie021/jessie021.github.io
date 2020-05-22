@@ -140,7 +140,7 @@ for (let i=0; i<prods.length; i+=1) {
 }
 
 //inspired by https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
-product_names.sort(function (a, b) {
+product_names = product_names.sort(function (a, b) {
   return a.price - b.price;
 });
 
