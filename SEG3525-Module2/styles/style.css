@@ -2,6 +2,7 @@
 h1 {
   color: green;
   font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
   font-size: 300%;
 
 }
@@ -10,7 +11,7 @@ div {
   border: 3px outset yellowgreen;
   border-radius: 10px;
   background-color: whiteSmoke;
-  text-align: center;
+
   margin-bottom: 4px
 }
 
