@@ -91,9 +91,8 @@ function checked(){
   var organicTrue = document.getElementsById("organicOnly").checked;
 
   globalOrganicTrue = organicTrue;
-
-
 }
+
 
 function restrictListProducts(prods, restriction) {
 let product_names = [];
@@ -147,10 +146,10 @@ product_names = product_names.sort(function (a, b) {
 
 
 for (let i=0; i<product_names.length; i+=1){
-  product_sorted_with_price.push(product_names[i].name );
+  product_sorted_with_price.push(product_names[i].name);
 }
 
-return product_names;
+return product_sorted_with_price;
 }
 
 // Calculate the total price of items, with received parameter being a list of products
