@@ -145,16 +145,12 @@ product_names = product_names.sort(function (a, b) {
   return a.price - b.price;
 });
 
-<<<<<<< HEAD
+
 for (let i=0; i<product_names.length; i+=1){
   product_sorted_with_price.push(product_names[i].name);
 }
 
-
-return product_sorted_with_price;
-=======
 return product_names;
->>>>>>> parent of a3bbb26... hop
 }
 
 // Calculate the total price of items, with received parameter being a list of products
@@ -162,7 +158,7 @@ function getTotalPrice(chosenProducts) {
 totalPrice = 0;
 
 for (let i=0; i<products.length; i+=1) {
-  if (chosenProducts[0].indexOf(products[i].name[0]) > -1){
+  if (chosenProducts.indexOf(products[i].name) > -1){
     totalPrice += products[i].price;
   }
 }
