@@ -103,7 +103,7 @@ for (let i=0; i<prods.length; i+=1) {
 
     if (globalOrganicTrue == true){
       if ((prods[i].organic == true)){
-        product_names.push(prods[i]/name+ prods[i].price);
+        product_names.push(prods[i].name+ prods[i].price);
       }
     }else{
       product_names.push(prods[i].name+ prods[i].price);
