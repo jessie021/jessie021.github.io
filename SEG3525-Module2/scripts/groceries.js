@@ -151,8 +151,6 @@ for (let i=0; i<product_names.length; i+=1){
 }
 
 
-//inspired by https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
-
 return product_sorted_with_price;
 }
 
