@@ -10,7 +10,7 @@ div {
   border: 3px outset yellowgreen;
   border-radius: 10px;
   background-color: whiteSmoke;
-  /*text-align: center;*/
+  text-align: center;
   margin-bottom: 4px
 }
 
