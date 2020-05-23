@@ -97,16 +97,17 @@ function checked(){
 
 function restrictListProducts(prods, restriction) {
 let product_names = [];
+let product_sorted_with_price = [];
 
 for (let i=0; i<prods.length; i+=1) {
   if ((restriction == "Vegetarian") && (prods[i].vegetarian == true) ){
 
     if (globalOrganicTrue == true){
       if ((prods[i].organic == true)){
-        product_names.push(prods[i].name+ prods[i].price);
+        product_names.push(prods[i]);
       }
     }else{
-      product_names.push(prods[i].name+ prods[i].price);
+      product_names.push(prods[i]);
     }
 
   }
@@ -114,28 +115,28 @@ for (let i=0; i<prods.length; i+=1) {
 
     if (globalOrganicTrue == true){
       if ((prods[i].organic == true)){
-        product_names.push(prods[i].name+  " " + prods[i].price);
+        product_names.push(prods[i]);
       }
     }else{
-      product_names.push(prods[i].name +  " " + prods[i].price);
+      product_names.push(prods[i]);
     }
   }else if ((restriction == "GlutenFree&Vegetarian") && (prods[i].vegetarian == true)  && (prods[i].glutenFree == true) ){
     if (globalOrganicTrue == true){
       if ((prods[i].organic == true)){
-        product_names.push(prods[i].name +  " " + prods[i].price);
+        product_names.push(prods[i]);
       }
     }else{
-      product_names.push(prods[i].name + " " + prods[i].price);
+      product_names.push(prods[i]);
     }
   }
   else if (restriction == "None" ){
 
     if (globalOrganicTrue == true){
       if ((prods[i].organic == true)){
-        product_names.push(prods[i].name + prods[i].price);
+        product_names.push(prods[i]);
       }
     }else{
-      product_names.push(prods[i].name + prods[i].price);
+      product_names.push(prods[i]);
     }
   }
 }
@@ -145,7 +146,14 @@ product_names = product_names.sort(function (a, b) {
   return a.price - b.price;
 });
 
-return product_names;
+for (let i=0; i<product_names.length; i+=1){
+  product_sorted_with_price.push(product_names[i].price + " " + product_names[i].name)
+}
+
+
+//inspired by https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+
+return product_sorted_with_price;
 }
 
 // Calculate the total price of items, with received parameter being a list of products
