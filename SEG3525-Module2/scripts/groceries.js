@@ -146,7 +146,7 @@ product_names = product_names.sort(function (a, b) {
 });
 
 for (let i=0; i<product_names.length; i+=1){
-  product_sorted_with_price.push(product_names[i].name + "  " + product_names[i].price)
+  product_sorted_with_price.push(product_names[i].name)
 }
 
 
@@ -159,7 +159,7 @@ function getTotalPrice(chosenProducts) {
 totalPrice = 0;
 
 for (let i=0; i<products.length; i+=1) {
-  if (chosenProducts.indexOf(products[i].name) > -1){
+  if (chosenProducts[0].indexOf(products[i].name[0]) > -1){
     totalPrice += products[i].price;
   }
 }
