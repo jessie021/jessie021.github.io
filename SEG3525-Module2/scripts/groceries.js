@@ -22,14 +22,14 @@ var products = [
   name: "salmon",
   vegetarian: false,
   glutenFree: true,
-  price: 10.00,
+  price: 10.99,
   organic: true,
 },
 {
   name: "pomme",
   vegetarian: true,
   glutenFree: true,
-  price: 0.80,
+  price: 0.89,
   organic: true
 
 },
@@ -38,14 +38,14 @@ var products = [
   name: "poulet",
   vegetarian: false,
   glutenFree: true,
-  price: 9.00,
+  price: 9.99,
   organic: false
 },
 {
   name: "lait",
   vegetarian: true,
   glutenFree: true,
-  price: 2.00,
+  price: 2.99,
   organic: false
 },
 
@@ -61,7 +61,7 @@ var products = [
   name: "noix",
   vegetarian: true,
   glutenFree: true,
-  price: 1.00,
+  price: 1.99,
   organic: true
 
 },
@@ -69,7 +69,7 @@ var products = [
   name: "beurre",
   vegetarian: true,
   glutenFree: true,
-  price: 3.50,
+  price: 3.55,
   organic: false
 },
 {
@@ -147,7 +147,7 @@ product_names = product_names.sort(function (a, b) {
 });
 
 for (let i=0; i<product_names.length; i+=1){
-  product_sorted_with_price.push(product_names[i].name + "  " + product_sorted_with_price)
+  product_sorted_with_price.push(product_names[i].name + "  " + product_names[i].price)
 }
 
 
