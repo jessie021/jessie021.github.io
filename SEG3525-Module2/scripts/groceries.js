@@ -121,11 +121,7 @@ for (let i=0; i<prods.length; i+=1) {
   }else if ((restriction == "GlutenFree&Vegetarian") && (prods[i].vegetarian == true)  && (prods[i].glutenFree == true) ){
     if (globalOrganicTrue == true){
       if ((prods[i].organic == true)){
-<<<<<<< HEAD
         product_names.push(prods[i]);
-=======
-        product_names.push(prods[i].name +   " " + prods[i].price);
->>>>>>> parent of f44c9e1... bts
       }
     }else{
       product_names.push(prods[i]);
