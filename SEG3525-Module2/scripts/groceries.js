@@ -96,6 +96,7 @@ function checked(){
 
 function restrictListProducts(prods, restriction) {
 let product_names = [];
+let product_sorted_with_price =[];
 
 for (let i=0; i<prods.length; i+=1) {
   if ((restriction == "Vegetarian") && (prods[i].vegetarian == true) ){
@@ -150,6 +151,7 @@ for (let i=0; i<product_names.length; i+=1){
 }
 
 return product_sorted_with_price;
+
 }
 
 // Calculate the total price of items, with received parameter being a list of products
