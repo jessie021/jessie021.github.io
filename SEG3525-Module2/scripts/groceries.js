@@ -96,7 +96,7 @@ function checked(){
 
 function restrictListProducts(prods, restriction) {
 let product_names = [];
-let product_sorted_with_price =[];
+let product_sorted_with_price = [];
 
 for (let i=0; i<prods.length; i+=1) {
   if ((restriction == "Vegetarian") && (prods[i].vegetarian == true) ){
