@@ -1,6 +1,6 @@
 /* This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> */
 h1 {
-  color: orange;
+  color: yellowgreen;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   font-size: 300%;
@@ -8,7 +8,7 @@ h1 {
 }
 
 div {
-  border: 3px outset orange;
+  border: 3px outset yellowgreen;
   border-radius: 10px;
   background-color: whiteSmoke;
 
