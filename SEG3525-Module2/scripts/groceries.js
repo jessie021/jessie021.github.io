@@ -91,13 +91,14 @@ let product_sorted_with_price = [];
 
 for (let i=0; i<prods.length; i+=1) {
   if ((restriction == "Vegetarian") && (prods[i].vegetarian == true) ){
-
       product_names.push(prods[i]);
   }
+
   else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
       product_names.push(prods[i]);
 
-  }else if ((restriction == "GlutenFree&Vegetarian") && (prods[i].vegetarian == true)  && (prods[i].glutenFree == true) ){
+  }
+  else if ((restriction == "GlutenFree&Vegetarian") && (prods[i].vegetarian == true)  && (prods[i].glutenFree == true) ){
       product_names.push(prods[i]);
 
   }
@@ -120,10 +121,10 @@ for (let i=0; i<prods.length; i+=1) {
     product_sorted_with_price.push(product_names[i].price + " " + product_names[i].name);
   }
 
-  return {
+  return [
     product_sorted_with_price,
     product_names
-  };
+  ];
 
 }
 
