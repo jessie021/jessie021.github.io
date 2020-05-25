@@ -104,15 +104,8 @@ for (let i=0; i<prods.length; i+=1) {
 }
 
 //inspired by https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
-  product_names = product_names.sort(function (a, b) {
-      return a.price - b.price;
-  });
 
-  for (let i=0; i<product_names.length; i+=1){
-      product_sorted_with_price.push(product_names[i].name);
-  }
-
-return product_sorted_with_price;
+return product_names;
 }
 
 // Calculate the total price of items, with received parameter being a list of products
