@@ -21,15 +21,20 @@ function openInfo(evt, tabName) {
 
 }
 
+function checked(){
 
+  //code suivant inspirer du lien https://www.w3schools.com/howto/howto_js_display_checkbox_text.asp
+  var organicTrue = document.getElementsById("organicOnly").checked;
 
+  return organicTrue;
+}
 // generate a checkbox list from a list of products
 // it makes each product name as the label for the checkbos
 
 function populateListProductChoices(slct1, slct2) {
     var s1 = document.getElementById(slct1);
     var s2 = document.getElementById(slct2);
-	
+
 	// s2 represents the <div> in the Products tab, which shows the product list, so we first set it empty
     s2.innerHTML = "";
 
