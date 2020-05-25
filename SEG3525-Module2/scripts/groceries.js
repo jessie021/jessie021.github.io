@@ -106,9 +106,6 @@ function restrictListProducts(prods, restriction) {
     }
   }
 
-  //inspired by https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
-
-
     //inspired by https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
     product_names = product_names.sort(function (a, b) {
         return a.price - b.price;
@@ -120,7 +117,7 @@ function restrictListProducts(prods, restriction) {
 
     return product_sorted_with_price;
 
-    
+
 }
 
 // Calculate the total price of items, with received parameter being a list of products
