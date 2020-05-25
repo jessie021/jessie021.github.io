@@ -21,6 +21,60 @@ var products = [
   glutenFree: true,
   price: 10.00
 }
+{
+  name: "pomme",
+  vegetarian: true,
+  glutenFree: true,
+  price: 0.89,
+  organic: true
+
+},
+
+{
+  name: "poulet",
+  vegetarian: false,
+  glutenFree: true,
+  price: 9.99,
+  organic: false
+},
+{
+  name: "lait",
+  vegetarian: true,
+  glutenFree: true,
+  price: 2.99,
+  organic: false
+},
+
+{
+  name: "biscuit",
+  vegetarian: true,
+  glutenFree: false,
+  price: 2.75,
+  organic: false
+
+},
+{
+  name: "noix",
+  vegetarian: true,
+  glutenFree: true,
+  price: 1.99,
+  organic: true
+
+},
+{
+  name: "beurre",
+  vegetarian: true,
+  glutenFree: true,
+  price: 3.55,
+  organic: false
+},
+{
+  name: "ton",
+  vegetarian: false,
+  glutenFree: true,
+  price: 7.99,
+  organic: true
+}
 ];
 
 
@@ -30,17 +84,34 @@ var products = [
 
 function restrictListProducts(prods, restriction) {
 let product_names = [];
+let product_sorted_with_price = [];
+
 for (let i=0; i<prods.length; i+=1) {
   if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
-    product_names.push(prods[i].name);
+    product_names.push(prods[i]);
   }
   else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
-    product_names.push(prods[i].name);
+    product_names.push(prods[i]);
   }
+  else if ((restriction == "GlutenFree&Vegetarian") && (prods[i].vegetarian == true)  && (prods[i].glutenFree == true) ){
+    product_names.push(prods[i]);
+
+  }
+
   else if (restriction == "None"){
-    product_names.push(prods[i].name);
+    product_names.push(prods[i]);
   }
 }
+
+//inspired by https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+  product_names = product_names.sort(function (a, b) {
+      return a.price - b.price;
+  });
+
+  for (let i=0; i<product_names.length; i+=1){
+      product_names.push(product_names[i].name);
+  }
+
 return product_names;
 }
 
