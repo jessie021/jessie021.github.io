@@ -110,15 +110,15 @@ function restrictListProducts(prods, restriction) {
 
     //inspired by https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
     product_names = product_names.sort(function (a, b) {
-      return a.price - b.price;
+        return a.price - b.price;
     });
 
     for (let i=0; i<product_names.length; i+=1){
-      product_names.push(product_names[i].name);
+        product_names.push(product_names[i].name);
     }
 
     for (let i=0; i<product_names.length; i+=1){
-      product_sorted_with_price.push(product_names[i].price + " " + product_names[i].name);
+        product_sorted_with_price.push(product_names[i].price + " " + product_names[i].name);
     }
 
     return product_sorted_with_price;
