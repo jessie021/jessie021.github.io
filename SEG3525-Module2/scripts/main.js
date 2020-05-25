@@ -1,3 +1,4 @@
+
 // This function is called when any of the tab is clicked
 // It is adapted from https://www.w3schools.com/howto/howto_js_tabs.asp
 
@@ -21,18 +22,14 @@ function openInfo(evt, tabName) {
 
 }
 
-function checked(){
-  //code suivant inspirer du lien https://www.w3schools.com/howto/howto_js_display_checkbox_text.asp
-  var organicTrue = document.getElementsById("organicOnly").checked;
-
-  return organicTrue;
-}
 // generate a checkbox list from a list of products
-// it makes each product name as the label for the checkbos
+// it makes each product name as the label for the checkbox
 
 function populateListProductChoices(slct1, slct2) {
     var s1 = document.getElementById(slct1);
     var s2 = document.getElementById(slct2);
+
+
 
 	// s2 represents the <div> in the Products tab, which shows the product list, so we first set it empty
     s2.innerHTML = "";
@@ -47,11 +44,13 @@ function populateListProductChoices(slct1, slct2) {
 	for (i = 0; i < optionArray.length; i++) {
 
 		var productName = optionArray[i];
+
 		// create the checkbox and add in HTML DOM
 		var checkbox = document.createElement("input");
 		checkbox.type = "checkbox";
 		checkbox.name = "product";
 		checkbox.value = productName;
+
 		s2.appendChild(checkbox);
 
 		// create a label for the checkbox, and also add in HTML DOM
@@ -64,6 +63,7 @@ function populateListProductChoices(slct1, slct2) {
 		s2.appendChild(document.createElement("br"));
 	}
 }
+
 // This function is called when the "Add selected items to cart" button in clicked
 // The purpose is to build the HTML to be displayed (a Paragraph)
 // We build a paragraph to contain the list of selected items, and the total price
