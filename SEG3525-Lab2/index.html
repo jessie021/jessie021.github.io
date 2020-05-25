@@ -7,6 +7,10 @@
 
 <body>
 
+	<div>
+	<h1>Cotsca</h1>
+	</div>
+
 <!-- Tab links, each one with an onclick event associated with it -->
 <div class="tab">
   <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
@@ -26,6 +30,12 @@
 		<option value="GlutenFree&Vegetarian">GlutenFree&Vegetarian</option>
     <option value="None">None</option>
 	</select>
+
+	<br>
+	Organic Items Only:
+	<input type= "checkbox" id="organicOnly" name="organicOnly" onclick="checked()">
+	</input>
+	
 </div>
 
 <div id="Products" class="tabcontent">
