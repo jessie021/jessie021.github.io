@@ -22,7 +22,6 @@ function openInfo(evt, tabName) {
 }
 
 function checked(){
-
   //code suivant inspirer du lien https://www.w3schools.com/howto/howto_js_display_checkbox_text.asp
   var organicTrue = document.getElementsById("organicOnly").checked;
 

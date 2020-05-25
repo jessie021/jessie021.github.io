@@ -118,10 +118,10 @@ function restrictListProducts(prods, restriction) {
     }
 
     for (let i=0; i<product_names.length; i+=1){
-        product_sorted_with_price.push(product_names[i].price + " " + product_names[i].name);
+        product_sorted_with_price.push(product_names[i].price + "-" + product_names[i].name);
     }
 
-    return product_sorted_with_price;
+    return product_names;
 }
 
 // Calculate the total price of items, with received parameter being a list of products
