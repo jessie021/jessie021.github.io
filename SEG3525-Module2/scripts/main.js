@@ -38,7 +38,7 @@ function populateListProductChoices(slct1, slct2, slct3) {
     var s1 = document.getElementById(slct1);
     var s2 = document.getElementById(slct2);
 
-		var organicTre = checked();
+		var organicTre =  checked();
 
 	// s2 represents the <div> in the Products tab, which shows the product list, so we first set it empty
     s2.innerHTML = "";
