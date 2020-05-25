@@ -7,19 +7,22 @@ var products = [
   name: "brocoli",
   vegetarian: true,
   glutenFree: true,
-  price: 1.99
+  price: 1.99,
+  organic: true
 },
 {
   name: "bread",
   vegetarian: true,
   glutenFree: false,
-  price: 2.35
+  price: 2.35,
+  organic: true
 },
 {
   name: "salmon",
   vegetarian: false,
   glutenFree: true,
-  price: 10.00
+  price: 10.00,
+  organic: true
 },
 {
   name: "pomme",
