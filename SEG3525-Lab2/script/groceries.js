@@ -98,7 +98,6 @@ for (let i= 0; i<prods.length; i+=1) {
   }
   else if ((restriction == "GlutenFree&Vegetarian") && (prods[i].vegetarian == true)  && (prods[i].glutenFree == true) ){
     product_names.push(prods[i].name);
-
   }
 
   else if (restriction == "None"){
@@ -107,8 +106,10 @@ for (let i= 0; i<prods.length; i+=1) {
 }
 
 //inspired by https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
-
-return product_names;
+ for (let i = 0; i < product_names.length; i+=1){
+   product_sorted_with_price.push(product_names[i].name)
+ }
+ return product_names;
 }
 
 // Calculate the total price of items, with received parameter being a list of products
