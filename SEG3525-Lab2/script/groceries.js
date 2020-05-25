@@ -15,15 +15,14 @@ var products = [
   vegetarian: true,
   glutenFree: false,
   price: 2.35,
-  organic: false
-
+  organic: true
 },
 {
   name: "salmon",
   vegetarian: false,
   glutenFree: true,
-  price: 10.99,
-  organic: true,
+  price: 10.00,
+  organic: true
 },
 {
   name: "pomme",
@@ -81,83 +80,40 @@ var products = [
 }
 ];
 
-var globalOrganicTrue;
+
 
 // given restrictions provided, make a reduced list of products
 // prices should be included in this list, as well as a sort based on price
-function checked(){
-
-  //code suivant inspirer du lien https://www.w3schools.com/howto/howto_js_display_checkbox_text.asp
-  var organicTrue = document.getElementsById("organicOnly").checked;
-
-  globalOrganicTrue = organicTrue;
-}
-
 
 function restrictListProducts(prods, restriction) {
 let product_names = [];
 let product_sorted_with_price = [];
 
 for (let i=0; i<prods.length; i+=1) {
-  if ((restriction == "Vegetarian") && (prods[i].vegetarian == true) ){
-
-    if (globalOrganicTrue == true){
-      if ((prods[i].organic == true)){
-        product_names.push(prods[i]);
-      }
-    }else{
-      product_names.push(prods[i]);
-    }
-
+  if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
+    product_names.push(prods[i].name);
   }
   else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
-
-    if (globalOrganicTrue == true){
-      if ((prods[i].organic == true)){
-        product_names.push(prods[i]);
-      }
-    }else{
-      product_names.push(prods[i]);
-    }
-  }else if ((restriction == "GlutenFree&Vegetarian") && (prods[i].vegetarian == true)  && (prods[i].glutenFree == true) ){
-    if (globalOrganicTrue == true){
-      if ((prods[i].organic == true)){
-        product_names.push(prods[i]);
-      }
-    }else{
-      product_names.push(prods[i]);
-    }
+    product_names.push(prods[i].name);
   }
-  else if (restriction == "None" ){
+  else if ((restriction == "GlutenFree&Vegetarian") && (prods[i].vegetarian == true)  && (prods[i].glutenFree == true) ){
+    product_names.push(prods[i].name);
 
-    if (globalOrganicTrue == true){
-      if ((prods[i].organic == true)){
-        product_names.push(prods[i]);
-      }
-    }else{
-      product_names.push(prods[i]);
-    }
+  }
+
+  else if (restriction == "None"){
+    product_names.push(prods[i].name);
   }
 }
 
 //inspired by https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
-product_names = product_names.sort(function (a, b) {
-  return a.price - b.price;
-});
 
-
-for (let i=0; i<product_names.length; i+=1){
-  product_sorted_with_price.push(product_names[i].price + "-" + product_names[i].name);
-}
-
-return product_sorted_with_price;
-
+return product_names;
 }
 
 // Calculate the total price of items, with received parameter being a list of products
 function getTotalPrice(chosenProducts) {
 totalPrice = 0;
-
 for (let i=0; i<products.length; i+=1) {
   if (chosenProducts.indexOf(products[i].name) > -1){
     totalPrice += products[i].price;
