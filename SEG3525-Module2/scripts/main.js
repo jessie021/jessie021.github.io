@@ -22,6 +22,13 @@ function openInfo(evt, tabName) {
 
 }
 
+function checked(){
+
+  //code suivant inspirer du lien https://www.w3schools.com/howto/howto_js_display_checkbox_text.asp
+  var organicTrue = document.getElementsById("organicOnly").checked;
+
+  return globalOrganicTrue = organicTrue;
+}
 
 
 // generate a checkbox list from a list of products
@@ -31,21 +38,23 @@ function populateListProductChoices(slct1, slct2) {
     var s1 = document.getElementById(slct1);
     var s2 = document.getElementById(slct2);
 
-
+		var organicTre = checked();
 
 	// s2 represents the <div> in the Products tab, which shows the product list, so we first set it empty
     s2.innerHTML = "";
 
 	// obtain a reduced list of products based on restrictions
     var optionArray = restrictListProducts(products, s1.value);
+		var optionArray2 = optionArray.product_names;
+		var optionArray3 = optionArray.product_sorted_with_price;
 
 	// for each item in the array, create a checkbox element, each containing information such as:
 	// <input type="checkbox" name="product" value="Bread">
 	// <label for="Bread">Bread/label><br>
 
-	for (i = 0; i < optionArray.length; i++) {
+	for (i = 0; i < optionArray3.length; i++) {
 
-		var productName = optionArray[i];
+		var productName = optionArray3[i];
 
 		// create the checkbox and add in HTML DOM
 		var checkbox = document.createElement("input");

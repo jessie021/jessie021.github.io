@@ -81,18 +81,9 @@ var products = [
 }
 ];
 
-var globalOrganicTrue;
 
 // given restrictions provided, make a reduced list of products
 // prices should be included in this list, as well as a sort based on price
-function checked(){
-
-  //code suivant inspirer du lien https://www.w3schools.com/howto/howto_js_display_checkbox_text.asp
-  var organicTrue = document.getElementsById("organicOnly").checked;
-
-  globalOrganicTrue = organicTrue;
-}
-
 
 function restrictListProducts(prods, restriction) {
 let product_names = [];
@@ -101,42 +92,18 @@ let product_sorted_with_price = [];
 for (let i=0; i<prods.length; i+=1) {
   if ((restriction == "Vegetarian") && (prods[i].vegetarian == true) ){
 
-    if (globalOrganicTrue == true){
-      if ((prods[i].organic == true)){
-        product_names.push(prods[i]);
-      }
-    }else{
       product_names.push(prods[i]);
-    }
-
   }
   else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
+      product_names.push(prods[i]);
 
-    if (globalOrganicTrue == true){
-      if ((prods[i].organic == true)){
-        product_names.push(prods[i]);
-      }
-    }else{
-      product_names.push(prods[i]);
-    }
   }else if ((restriction == "GlutenFree&Vegetarian") && (prods[i].vegetarian == true)  && (prods[i].glutenFree == true) ){
-    if (globalOrganicTrue == true){
-      if ((prods[i].organic == true)){
-        product_names.push(prods[i]);
-      }
-    }else{
       product_names.push(prods[i]);
-    }
+
   }
   else if (restriction == "None" ){
-
-    if (globalOrganicTrue == true){
-      if ((prods[i].organic == true)){
-        product_names.push(prods[i]);
-      }
-    }else{
       product_names.push(prods[i]);
-    }
+
   }
 }
 
@@ -150,7 +117,7 @@ for (let i=0; i<product_names.length; i+=1){
   product_sorted_with_price.push(product_names[i].price + " " + product_names[i].name);
 }
 
-return product_sorted_with_price;
+return {product_sorted_with_price, product_names};
 
 }
 
