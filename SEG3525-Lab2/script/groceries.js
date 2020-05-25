@@ -91,17 +91,17 @@ let product_sorted_with_price = [];
 
 for (let i= 0; i<prods.length; i+=1) {
   if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
-    product_names.push(prods[i].name);
+    product_names.push(prods[i]);
   }
   else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
-    product_names.push(prods[i].name);
+    product_names.push(prods[i]);
   }
   else if ((restriction == "GlutenFree&Vegetarian") && (prods[i].vegetarian == true)  && (prods[i].glutenFree == true) ){
-    product_names.push(prods[i].name);
+    product_names.push(prods[i]);
   }
 
   else if (restriction == "None"){
-    product_names.push(prods[i].name);
+    product_names.push(prods[i]);
   }
 }
 
