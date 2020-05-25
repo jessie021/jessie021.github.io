@@ -88,18 +88,18 @@ let product_sorted_with_price = [];
 
 for (let i=0; i<prods.length; i+=1) {
   if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
-    product_names.push(prods[i]);
+    product_names.push(prods[i].name);
   }
   else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
-    product_names.push(prods[i]);
+    product_names.push(prods[i].name);
   }
   else if ((restriction == "GlutenFree&Vegetarian") && (prods[i].vegetarian == true)  && (prods[i].glutenFree == true) ){
-    product_names.push(prods[i]);
+    product_names.push(prods[i].name);
 
   }
 
   else if (restriction == "None"){
-    product_names.push(prods[i]);
+    product_names.push(prods[i].name);
   }
 }
 
@@ -109,10 +109,10 @@ for (let i=0; i<prods.length; i+=1) {
   });
 
   for (let i=0; i<product_names.length; i+=1){
-      product_names.push(product_names[i].name);
+      product_sorted_with_price.push(product_names[i].name);
   }
 
-return product_names;
+return product_sorted_with_price;
 }
 
 // Calculate the total price of items, with received parameter being a list of products
