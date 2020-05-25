@@ -27,7 +27,7 @@ function checked(){
   //code suivant inspirer du lien https://www.w3schools.com/howto/howto_js_display_checkbox_text.asp
   var organicTrue = document.getElementsById("organicOnly").checked;
 
-  return globalOrganicTrue = organicTrue;
+  return organicTrue;
 }
 
 
@@ -52,9 +52,9 @@ function populateListProductChoices(slct1, slct2) {
 	// <input type="checkbox" name="product" value="Bread">
 	// <label for="Bread">Bread/label><br>
 
-	for (i = 0; i < optionArray3.length; i++) {
+	for (i = 0; i < optionArray.length; i++) {
 
-		var productName = optionArray3[i];
+		var productName = optionArray[i];
 
 		// create the checkbox and add in HTML DOM
 		var checkbox = document.createElement("input");
