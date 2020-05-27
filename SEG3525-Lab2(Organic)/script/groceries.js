@@ -100,7 +100,7 @@ let names = [];
 for (let i= 0; i<prods.length; i+=1) {
   if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
 
-    if(isOrganic = false ){
+    if(isOrganic == false){
       product_names.push(prods[i]);
     }else{
       if (prods[i].organic == isOrganic){
