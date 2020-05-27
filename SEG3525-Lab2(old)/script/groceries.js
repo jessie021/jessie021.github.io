@@ -88,7 +88,6 @@ var products = [
 function restrictListProducts(prods, restriction) {
 let product_names = [];
 let product_sorted_with_price = [];
-let names = [];
 
 for (let i= 0; i<prods.length; i+=1) {
   if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
@@ -114,13 +113,7 @@ for (let i= 0; i<prods.length; i+=1) {
  for (let i = 0; i < product_names.length; i+=1){
    product_sorted_with_price.push(product_names[i].price + "-" + product_names[i].name)
  }
-
- for (let i = 0; i < product_names.length; i+=1){
-   names.push(product_names[i].name)
- }
-
- return [product_sorted_with_price, names];
-
+ return product_sorted_with_price;
 }
 
 // Calculate the total price of items, with received parameter being a list of products
