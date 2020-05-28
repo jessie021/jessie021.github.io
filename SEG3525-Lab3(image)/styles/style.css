@@ -7,6 +7,11 @@ h1 {
 
 }
 
+h3{
+  color: white
+
+}
+
 div {
   border: 3px outset red;
   border-radius: 10px;
@@ -17,8 +22,8 @@ div {
 * {box-sizing: border-box}
 .tab {
   float: left;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  border: 1px solid yellowgreen;
+  background-color: blue;
   width: 30%;
   height: 300px;
 }
