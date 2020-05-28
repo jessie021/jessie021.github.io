@@ -21,7 +21,7 @@ var products = [
   name: "salmon",
   vegetarian: false,
   glutenFree: true,
-  price: 10.00,
+  price: 10.99,
   organic: true
 },
 {
@@ -86,6 +86,7 @@ function checked(){
 
 	 isOrganic = document.getElementById("organicOnly").checked;
 
+   return isOrganic;
 }
 
 
@@ -96,19 +97,28 @@ function restrictListProducts(prods, restriction) {
 let product_names = [];
 let product_sorted_with_price = [];
 let names = [];
+let organicBool = checked();
 
 for (let i= 0; i<prods.length; i+=1) {
   if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
 
-    if(isOrganic == false){
+    if (organicBool == true){
+      if (prods[i].organic == organicBool){
+        product_names.push(prods[i]);
+
+      }
+    }else {
+      product_names.push(prods[i]);
+    }
+    /*
+    if(organicBool == false){
       product_names.push(prods[i]);
     }else{
-      if (prods[i].organic == isOrganic){
+      if (prods[i].organic == organicBool){
         product_names.push(prods[i]);
       }
-
     }
-  }
+  }*/
   else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
     product_names.push(prods[i]);
   }
