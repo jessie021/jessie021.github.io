@@ -8,28 +8,33 @@ var products = [
   vegetarian: true,
   glutenFree: true,
   price: 1.99,
-  organic: true
+  organic: true,
+  image: "broccoli.jpg"
+
 },
 {
   name: "bread",
   vegetarian: true,
   glutenFree: false,
   price: 2.35,
-  organic: true
+  organic: true,
+  image: "bread.jpg"
 },
 {
   name: "salmon",
   vegetarian: false,
   glutenFree: true,
   price: 10.00,
-  organic: true
+  organic: true,
+  image: "salmon.jpg"
 },
 {
   name: "pomme",
   vegetarian: true,
   glutenFree: true,
   price: 0.89,
-  organic: true
+  organic: true,
+  image: "apple.jpg"
 
 },
 
@@ -38,14 +43,16 @@ var products = [
   vegetarian: false,
   glutenFree: true,
   price: 9.99,
-  organic: false
+  organic: false,
+  image: "chicken.png"
 },
 {
   name: "lait",
   vegetarian: true,
   glutenFree: true,
   price: 2.99,
-  organic: false
+  organic: false,
+  image: "milk.jpg"
 },
 
 {
@@ -53,7 +60,8 @@ var products = [
   vegetarian: true,
   glutenFree: false,
   price: 2.75,
-  organic: false
+  organic: false,
+  image: "cookie.jpg"
 
 },
 {
@@ -61,7 +69,8 @@ var products = [
   vegetarian: true,
   glutenFree: true,
   price: 1.99,
-  organic: true
+  organic: true,
+  image: "nuts.jpg"
 
 },
 {
@@ -69,14 +78,16 @@ var products = [
   vegetarian: true,
   glutenFree: true,
   price: 3.55,
-  organic: false
+  organic: false,
+  image: "butter.jpg"
 },
 {
   name: "ton",
   vegetarian: false,
   glutenFree: true,
   price: 7.99,
-  organic: true
+  organic: true,
+  image: "tuna.jpg"
 }
 ];
 
@@ -88,6 +99,8 @@ var products = [
 function restrictListProducts(prods, restriction) {
 let product_names = [];
 let product_sorted_with_price = [];
+let image = [];
+let names = [];
 
 for (let i= 0; i<prods.length; i+=1) {
   if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
@@ -113,7 +126,16 @@ for (let i= 0; i<prods.length; i+=1) {
  for (let i = 0; i < product_names.length; i+=1){
    product_sorted_with_price.push(product_names[i].price + "-" + product_names[i].name)
  }
- return product_sorted_with_price;
+
+ for (let i = 0; i < product_names.length; i+=1){
+   names.push(product_names[i].name)
+ }
+ for (let i = 0; i < product_names.length; i+=1){
+   image.push(product_names[i].image)
+ }
+
+ return [product_sorted_with_price, names, image];
+
 }
 
 // Calculate the total price of items, with received parameter being a list of products
