@@ -110,15 +110,7 @@ for (let i= 0; i<prods.length; i+=1) {
     }else {
       product_names.push(prods[i]);
     }
-    /*
-    if(organicBool == false){
-      product_names.push(prods[i]);
-    }else{
-      if (prods[i].organic == organicBool){
-        product_names.push(prods[i]);
-      }
-    }
-  }*/
+
   else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
     product_names.push(prods[i]);
   }

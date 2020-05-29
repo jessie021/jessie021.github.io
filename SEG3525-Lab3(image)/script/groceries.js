@@ -4,7 +4,7 @@
 
 var products = [
 {
-  name: "brocoli",
+  name: "Brocoli",
   vegetarian: true,
   glutenFree: true,
   price: 1.99,
@@ -13,7 +13,7 @@ var products = [
 
 },
 {
-  name: "bread",
+  name: "Bread",
   vegetarian: true,
   glutenFree: false,
   price: 2.35,
@@ -21,7 +21,7 @@ var products = [
   image: "image/bread.jpg"
 },
 {
-  name: "salmon",
+  name: "Salmon",
   vegetarian: false,
   glutenFree: true,
   price: 10.00,
@@ -29,7 +29,7 @@ var products = [
   image: "image/salmon.jpg"
 },
 {
-  name: "pomme",
+  name: "Apple",
   vegetarian: true,
   glutenFree: true,
   price: 0.89,
@@ -39,7 +39,7 @@ var products = [
 },
 
 {
-  name: "poulet",
+  name: "Chicken",
   vegetarian: false,
   glutenFree: true,
   price: 9.99,
@@ -47,7 +47,7 @@ var products = [
   image: "image/chicken.png"
 },
 {
-  name: "lait",
+  name: "Milk",
   vegetarian: true,
   glutenFree: true,
   price: 2.99,
@@ -56,7 +56,7 @@ var products = [
 },
 
 {
-  name: "biscuit",
+  name: "Cookies",
   vegetarian: true,
   glutenFree: false,
   price: 2.75,
@@ -65,7 +65,7 @@ var products = [
 
 },
 {
-  name: "noix",
+  name: "Nuts",
   vegetarian: true,
   glutenFree: true,
   price: 1.99,
@@ -74,7 +74,7 @@ var products = [
 
 },
 {
-  name: "beurre",
+  name: "Butter",
   vegetarian: true,
   glutenFree: true,
   price: 3.55,
@@ -82,7 +82,7 @@ var products = [
   image: "image/butter.jpg"
 },
 {
-  name: "ton",
+  name: "Tuna",
   vegetarian: false,
   glutenFree: true,
   price: 7.99,
@@ -103,6 +103,7 @@ let image = [];
 let names = [];
 
 for (let i= 0; i<prods.length; i+=1) {
+  
   if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
     product_names.push(prods[i]);
   }
