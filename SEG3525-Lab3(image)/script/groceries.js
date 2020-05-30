@@ -18,7 +18,7 @@ var products = [
   glutenFree: false,
   price: 2.35,
   organic: true,
-  image: "image/bread.jpg"
+  image: "bread.jpg"
 },
 {
   name: "Salmon",
@@ -34,7 +34,7 @@ var products = [
   glutenFree: true,
   price: 0.89,
   organic: true,
-  image: "image/apple.jpg"
+  image: "apple.jpg"
 
 },
 
@@ -103,7 +103,7 @@ let image = [];
 let names = [];
 
 for (let i= 0; i<prods.length; i+=1) {
-  
+
   if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
     product_names.push(prods[i]);
   }

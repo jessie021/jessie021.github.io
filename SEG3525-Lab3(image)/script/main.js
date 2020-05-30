@@ -23,6 +23,7 @@ function openInfo(evt, tabName) {
 }
 
 function checked(){
+	//get boolean value of checked boxe
 	var isOrganic = document.getElementById("organicOnly").checked;
 
 	return isOrganic;
@@ -70,9 +71,9 @@ function populateListProductChoices(slct1, slct2) {
 		s2.appendChild(label);
 
  		s2.appendChild(document.createElement("br"));
-		
+
 		var image = document.createElement('IMG');
-		image.setAttribute("src", productI);
+		image.setAttribute("src", "apple.jpg");
   	image.setAttribute("width", "105");
   	image.setAttribute("height", "100");
   	image.setAttribute("alt", " Image not Available");
