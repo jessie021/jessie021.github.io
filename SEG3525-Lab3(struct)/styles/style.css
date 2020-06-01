@@ -7,13 +7,20 @@ h1 {
 
 }
 
+#filter {background-color:orangered;}
+#product {background-color:gold;}
+#cart {background-color:orange;}
+#done {background-color:coral;}
+
 div {
-  background-color:	dimgray;
+
+  background-color:	default;
 }
 
 .diss{
-
-  background-color:	blue;
+  border: black;
+  padding: 14px 16px;
+  background-color:	dimgray;
 }
 
 /* Style the tab */
