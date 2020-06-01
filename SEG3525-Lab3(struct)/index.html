@@ -12,11 +12,7 @@
 	</div>
 
 <!-- Tab links, each one with an onclick event associated with it -->
-<div class="tab">
-  <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
-  <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
-  <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
-</div>
+
 
 <div id="Filter Your Products" class="tabcontent">
 	<h3>Client Information</h3>
@@ -34,10 +30,10 @@
 	Organic Items Only:
 	<input type= "checkbox" id="organicOnly" name="organicOnly" onclick="checked()">
 	</input>
-	
+
 </div>
 
-<div id="Product" class="tabcontent">
+<div id="Products" class="tabcontent">
   <h1>Paris</h1>
   <p>Paris is the capital of France.</p>
 </div>
@@ -49,9 +45,9 @@
 
 
 
-<button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen">London</button>
-<button class="tablink" onclick="openCity('Paris', this, 'green')">Paris</button>
-<button class="tablink" onclick="openCity('Tokyo', this, 'blue')">Tokyo</button>
+<button class="tablink" onclick="openCity('Filter Your Products', this, 'red')" id="defaultOpen">Filter Your Products</button>
+<button class="tablink" onclick="openCity('Products', this, 'green')">Products</button>
+<button class="tablink" onclick="openCity('Cart', this, 'blue')">Cart</button>
 
 <!-- Tab content -->
 <div id="Client" class="tabcontent">
@@ -88,6 +84,7 @@
   <p>Here is your cart.</p>
   <div id="displayCart"></div>
 </div>
+
 
 <script src="script/groceries.js"></script>
 <script src="script/main.js"></script>
