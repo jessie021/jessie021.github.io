@@ -8,12 +8,13 @@ h1 {
 }
 
 div {
-
+  background-color:	dimgray;
 }
 
 .diss{
 
-  background-color:	dimgray;
+  /*background-color:	dimgray;*/
+
 }
 /* Style the tab */
 /* Style the tab buttons */
