@@ -8,7 +8,7 @@ h1 {
 }
 
 div {
-  
+
   background-color:	whitesmoke;
   margin-bottom: 4px
 }
@@ -40,6 +40,6 @@ div {
 }
 
 /* Style each tab content individually */
-#London {background-color:red;}
-#Paris {background-color:green;}
-#Tokyo {background-color:blue;}
+#filter {background-color:red;}
+#product {background-color:black;}
+#cart {background-color:blue;}
