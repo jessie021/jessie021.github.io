@@ -40,6 +40,6 @@ div {
 }
 
 /* Style each tab content individually */
-#filter {background-color:red;}
-#product {background-color:black;}
-#cart {background-color:blue;}
+#filter {background-color:orangered;}
+#product {background-color:gold;}
+#cart {background-color:orange;}
