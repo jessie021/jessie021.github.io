@@ -7,7 +7,11 @@ h1 {
 
 }
 
-
+div {
+  
+  background-color:	whitesmoke;
+  margin-bottom: 4px
+}
 /* Style the tab */
 /* Style the tab buttons */
 .tablink {
