@@ -8,11 +8,12 @@ h1 {
 }
 
 div {
-  background-color:	dimgray;
+
 }
 
 .diss{
 
+  background-color:	dimgray;
 }
 /* Style the tab */
 /* Style the tab buttons */
@@ -45,3 +46,4 @@ div {
 #filter {background-color:orangered;}
 #product {background-color:gold;}
 #cart {background-color:orange;}
+#done {background-color:coral;}
