@@ -1,6 +1,6 @@
 /*https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp*/
 h1 {
-  color: orange;
+  color: yellowGreen;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   font-size: 300%;
@@ -8,13 +8,13 @@ h1 {
 }
 
 h3{
-  color: white;
+  color: yellowgreen;
 }
 
 div {
-  border: 3px outset red;
+  border: 3px outset black;
   border-radius: 10px;
-  background-color: white;
+  background-color: yellowGreen;
   margin-bottom: 4px
 }
 
