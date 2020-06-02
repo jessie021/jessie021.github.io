@@ -150,7 +150,7 @@ totalPrice = 0;
 for (let i=0; i<products.length; i+=1) {
   if (chosenProducts.indexOf(products[i].name) > -1){
     totalPrice += products[i].price;
-    totalPrice..toFixed(2);
+    totalPrice = totalPrice.toFixed(2);
   }
 }
 return totalPrice;
