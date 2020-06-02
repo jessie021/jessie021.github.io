@@ -25,14 +25,6 @@ function openCity(cityName, elmnt, color) {
 document.getElementById("defaultOpen").click();
 
 
-function checked(){
-	//get boolean value of checked boxe
-	var isOrganic = document.getElementById("organicOnly").checked;
-
-	return isOrganic;
-
-}
-
 
 //the next two funttions where taken from https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
 /* Open when someone clicks on the span element */

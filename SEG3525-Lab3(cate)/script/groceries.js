@@ -8,7 +8,7 @@ var products = [
   vegetarian: true,
   glutenFree: true,
   price: 1.99,
-  organic: "false",
+  organic: false,
   image: "broccoli.jpg"
 
 },
@@ -17,7 +17,7 @@ var products = [
   vegetarian: true,
   glutenFree: false,
   price: 2.35,
-  organic: "true",
+  organic: true,
   image: "bread.jpg"
 },
 {
@@ -25,7 +25,7 @@ var products = [
   vegetarian: false,
   glutenFree: true,
   price: 10.00,
-  organic: "true",
+  organic: true,
   image: "salmon.jpg"
 },
 {
@@ -33,7 +33,7 @@ var products = [
   vegetarian: true,
   glutenFree: true,
   price: 0.89,
-  organic: "true",
+  organic: true,
   image: "apple.jpg"
 
 },
@@ -43,7 +43,7 @@ var products = [
   vegetarian: false,
   glutenFree: true,
   price: 9.99,
-  organic: "false",
+  organic: false,
   image: "chicken.png"
 },
 {
@@ -51,7 +51,7 @@ var products = [
   vegetarian: true,
   glutenFree: true,
   price: 2.99,
-  organic: "false",
+  organic: false,
   image: "milk.jpg"
 },
 
@@ -69,7 +69,7 @@ var products = [
   vegetarian: true,
   glutenFree: true,
   price: 1.99,
-  organic: "true",
+  organic: true,
   image: "nuts.jpg"
 
 },
@@ -78,7 +78,7 @@ var products = [
   vegetarian: true,
   glutenFree: true,
   price: 3.55,
-  organic: "false",
+  organic: false,
   image: "butter.jpg"
 },
 {
@@ -86,7 +86,7 @@ var products = [
   vegetarian: false,
   glutenFree: true,
   price: 7.99,
-  organic: "true",
+  organic: true,
   image: "tuna.jpg"
 }
 ];
@@ -118,7 +118,7 @@ for (let i= 0; i<prods.length; i+=1) {
     product_names.push(prods[i]);
   }
   else if (restriction == "Organic"){
-    if (prods[i].organic == "true"){
+    if (prods[i].organic == true){
       product_names.push(prods[i]);
     }
   }
