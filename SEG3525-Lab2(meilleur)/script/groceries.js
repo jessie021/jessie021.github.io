@@ -92,7 +92,7 @@ let names = [];
 
 var isOrganic = document.getElementById("organicOnly");
 
-  if (isOrganic.checked()){
+  if (isOrganic.checked){
     for (let i= 0; i<prods.length; i+=1) {
         if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
           product_names.push(prods[i]);
