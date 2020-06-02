@@ -97,12 +97,12 @@ var isOrganic = document.getElementById("organicOnly");
         if ((restriction == "Vegetarian") && (prods[i].vegetarian == true) && (prod[i].organic == true)){
           product_names.push(prods[i]);
         }
-        else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)&& (prod[i].organic == true)){
+        else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true) && (prod[i].organic == true)){
           product_names.push(prods[i]);
         }
         else if ((restriction == "GlutenFree&Vegetarian") && (prods[i].vegetarian == true)  && (prods[i].glutenFree == true) && (prod[i].organic == true) ){
           product_names.push(prods[i]);
-        }else if (restriction == "None"  && (prod[i].organic == true)){
+        }else if (restriction == "None" && (prod[i].organic == true)){
           product_names.push(prods[i]);
         }
      }
