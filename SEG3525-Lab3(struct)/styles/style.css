@@ -2,7 +2,7 @@
 h1 {
   color: red;
   font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
+  text-align: right;
   font-size: 300%;
 
 }
@@ -20,14 +20,14 @@ div{
 .diss2{
   border: black;
   padding: 14px 16px;
-  background-color:orangered	;
+  background-color:orangered;
 
 }
 
 .diss3{
   border: black;
   padding: 14px 16px;
-  background-color:	gold;
+  background-color:	maroon;
 
 }
 
@@ -81,6 +81,6 @@ div{
 
 /* Style each tab content individually */
 #filter {background-color:orangered;}
-#product {background-color:gold;}
+#product {background-color:maroon;}
 #cart {background-color:orange;}
 #done {background-color:coral;}
