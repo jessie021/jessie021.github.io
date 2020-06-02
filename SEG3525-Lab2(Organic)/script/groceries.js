@@ -8,28 +8,28 @@ var products = [
   vegetarian: true,
   glutenFree: true,
   price: 1.99,
-  organic: true
+  organic: "true"
 },
 {
   name: "bread",
   vegetarian: true,
   glutenFree: false,
   price: 2.35,
-  organic: true
+  organic: "true"
 },
 {
   name: "salmon",
   vegetarian: false,
   glutenFree: true,
   price: 10.99,
-  organic: true
+  organic: "true"
 },
 {
   name: "pomme",
   vegetarian: true,
   glutenFree: true,
   price: 0.89,
-  organic: true
+  organic: "true"
 
 },
 
@@ -38,14 +38,14 @@ var products = [
   vegetarian: false,
   glutenFree: true,
   price: 9.99,
-  organic: false
+  organic: "false"
 },
 {
   name: "lait",
   vegetarian: true,
   glutenFree: true,
   price: 2.99,
-  organic: false
+  organic: "false"
 },
 
 {
@@ -53,7 +53,7 @@ var products = [
   vegetarian: true,
   glutenFree: false,
   price: 2.75,
-  organic: false
+  organic: "false"
 
 },
 {
@@ -61,7 +61,7 @@ var products = [
   vegetarian: true,
   glutenFree: true,
   price: 1.99,
-  organic: true
+  organic: "true"
 
 },
 {
@@ -69,24 +69,24 @@ var products = [
   vegetarian: true,
   glutenFree: true,
   price: 3.55,
-  organic: false
+  organic: "false"
 },
 {
   name: "ton",
   vegetarian: false,
   glutenFree: true,
   price: 7.99,
-  organic: true
+  organic: "true"
 }
 ];
 
-let isOrganic = false;
+let isOrganic = "false";
 
 function checked(){
 
 	 isOrganic = document.getElementById("organicOnly").checked;
 
-   return isOrganic;
+   //return isOrganic;
 }
 
 
@@ -97,13 +97,13 @@ function restrictListProducts(prods, restriction) {
 let product_names = [];
 let product_sorted_with_price = [];
 let names = [];
-let organicBool = checked();
+//let organicBool = checked();
 
 for (let i= 0; i<prods.length; i+=1) {
   if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
 
     if (organicBool == true){
-      if (prods[i].organic == organicBool){
+      if (prods[i].organic == isOrganic){
         product_names.push(prods[i]);
 
       }
