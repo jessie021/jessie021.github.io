@@ -46,8 +46,9 @@ div{
 
 .diss6{
   border: black;
-  padding: 50px 50px;
+  padding: 20px 20px;
   background-color:gold;
+  border-style: solid;
 
 }
 
