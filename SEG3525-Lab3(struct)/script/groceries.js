@@ -52,7 +52,7 @@ var products = [
   glutenFree: true,
   price: 2.99,
   organic: "false",
-  image: "image/milk.jpg"
+  image: "milk.jpg"
 },
 
 {
@@ -70,7 +70,7 @@ var products = [
   glutenFree: true,
   price: 1.99,
   organic: "true",
-  image: "image/nuts.jpg"
+  image: "nuts.jpg"
 
 },
 {

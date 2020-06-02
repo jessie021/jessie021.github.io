@@ -89,7 +89,7 @@ function populateListProductChoices(slct1, slct2) {
  		s2.appendChild(document.createElement("br"));
 
 		var image = document.createElement('img');
-		image.setAttribute("src", "apple.jpg");
+		image.setAttribute("src", productI);
   	image.setAttribute("width", "105");
   	image.setAttribute("height", "100");
   	image.setAttribute("alt", " Image not Available");
