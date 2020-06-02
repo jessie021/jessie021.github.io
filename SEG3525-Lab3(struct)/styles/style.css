@@ -7,6 +7,15 @@ h1 {
 
 }
 
+div{
+  
+  #filter {background-color:orangered;}
+  #product {background-color:gold;}
+  #cart {background-color:orange;}
+  #done {background-color:coral;}
+
+}
+
 #filter {background-color:orangered;}
 #product {background-color:gold;}
 #cart {background-color:orange;}
