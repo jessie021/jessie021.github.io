@@ -22,12 +22,6 @@ function openInfo(evt, tabName) {
 
 }
 
-function checked(){
-	var isOrganic = document.getElementById("organicOnly").checked;
-
-	return isOrganic;
-
-}
 
 // generate a checkbox list from a list of products
 // it makes each product name as the label for the checkbos
