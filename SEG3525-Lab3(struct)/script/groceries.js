@@ -118,7 +118,7 @@ for (let i= 0; i<prods.length; i+=1) {
     product_names.push(prods[i]);
   }
   else if (restriction == "Organic"){
-    if (prods[i].organic == "true"){
+    if (prods[i].organic == true){
       product_names.push(prods[i]);
     }
   }
