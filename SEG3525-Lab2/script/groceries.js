@@ -92,38 +92,22 @@ let names = [];
 
 var isOrganic = document.getElementById("organicOnly");
 
-if (isOrganic.checked){
-  for (let i= 0; i<prods.length; i+=1) {
-    if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
-      product_names.push(prods[i]);
-    }
-    else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
-      product_names.push(prods[i]);
-    }
-    else if ((restriction == "GlutenFree&Vegetarian") && (prods[i].vegetarian == true)  && (prods[i].glutenFree == true) ){
-      product_names.push(prods[i]);
-    }
+for (let i= 0; i<prods.length; i+=1) {
+  if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
+    product_names.push(prods[i]);
+  }
+  else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
+    product_names.push(prods[i]);
+  }
+  else if ((restriction == "GlutenFree&Vegetarian") && (prods[i].vegetarian == true)  && (prods[i].glutenFree == true) ){
+    product_names.push(prods[i]);
+  }
 
-    else if (restriction == "None"){
-      product_names.push(prods[i]);
-    }
-  }else{
-    for (let i= 0; i<prods.length; i+=1) {
-      if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
-        product_names.push(prods[i]);
-      }
-      else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
-        product_names.push(prods[i]);
-      }
-      else if ((restriction == "GlutenFree&Vegetarian") && (prods[i].vegetarian == true)  && (prods[i].glutenFree == true) ){
-        product_names.push(prods[i]);
-      }
-
-      else if (restriction == "None"){
-        product_names.push(prods[i]);
-      }
+  else if (restriction == "None"){
+    product_names.push(prods[i]);
   }
 }
+
 //inspired by https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
  product_names = product_names.sort(function (a, b) {
     return a.price - b.price;
