@@ -9,7 +9,7 @@ var products = [
   glutenFree: true,
   price: 1.99,
   organic: "true",
-  image: "broccoli.jpg"
+  image: broccoli.jpg
 
 },
 {
