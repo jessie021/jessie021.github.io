@@ -12,7 +12,7 @@ div{
 }
 
 .diss{
-  border: black;
+  border: 10px black;
   padding: 14px 16px;
   background-color:	dimgray;
 }
@@ -45,10 +45,10 @@ div{
 }
 
 .diss6{
-  border: black;
+  border: 4px black;
   padding: 20px 20px;
   background-color:gold;
-  border-style: solid;
+
 
 }
 
