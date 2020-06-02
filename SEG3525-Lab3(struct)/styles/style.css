@@ -7,6 +7,9 @@ h1 {
 
 }
 
+div{
+  background-color: inherit;
+}
 
 
 #filter {background-color:orangered;}
