@@ -11,19 +11,39 @@ div{
   background-color: red;
 }
 
-
-#filter {background-color:orangered;}
-#product {background-color:gold;}
-#cart {background-color:orange;}
-#done {background-color:coral;}
-
-
-
 .diss{
   border: black;
   padding: 14px 16px;
   background-color:	dimgray;
 }
+
+.diss2{
+  border: black;
+  padding: 14px 16px;
+  background-color:orangered	;
+
+}
+
+.diss3{
+  border: black;
+  padding: 14px 16px;
+  background-color:	gold;
+
+}
+
+.diss4{
+  border: black;
+  padding: 14px 16px;
+  background-color:orange	;
+
+}
+.diss5{
+  border: black;
+  padding: 14px 16px;
+  background-color:coral	;
+
+}
+
 
 /* Style the tab */
 .tablink {
