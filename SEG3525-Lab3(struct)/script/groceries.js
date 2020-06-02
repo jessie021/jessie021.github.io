@@ -117,6 +117,11 @@ for (let i= 0; i<prods.length; i+=1) {
   else if (restriction == "None"){
     product_names.push(prods[i]);
   }
+  else if (restriction == "Organic"){
+    if (prods[i].organic == "true"){
+      product_names.push(prods[i]);
+    }
+  }
 }
 
 //inspired by https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
