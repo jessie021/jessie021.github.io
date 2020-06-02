@@ -1,77 +1,84 @@
-/*https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp*/
+/* This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> */
 h1 {
-  color: yellowGreen;
+  color: red;
   font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
+  text-align: right;
   font-size: 300%;
 
 }
 
-h3{
-  color: yellowgreen;
+div{
+  background-color: red;
 }
 
-div {
-  border: 3px outset black;
-  border-radius: 10px;
-  background-color: 	rosybrown;
-  margin-bottom: 4px
+.diss{
+  border: 10px black;
+  padding: 14px 16px;
+  background-color:	dimgray;
+}
+
+.diss2{
+  border: black;
+  padding: 14px 16px;
+  background-color:orangered;
+
+}
+
+.diss3{
+  border: black;
+  padding: 14px 16px;
+  background-color:	gold;
+
+}
+
+.diss4{
+  border: black;
+  padding: 14px 16px;
+  background-color:orange	;
+
+}
+.diss5{
+  border: black;
+  padding: 14px 16px;
+  background-color:coral	;
+
+}
+
+.diss6{
+  border: 4px black;
+  padding: 20px 20px;
+  background-color:gold;
+
 }
 
 /* Style the tab */
-/* The Overlay (background) */
-.overlay {
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */
-  height: 100%;
-  width: 0;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  background-color: rgb(0,0,0); /* Black fallback color */
-  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
 }
 
-/* Position the content inside the overlay */
-.overlay-content {
-  position: relative;
-  top: 25%; /* 25% from the top */
-  width: 100%; /* 100% width */
-  text-align: center; /* Centered text/links */
-  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+/* Change background color of buttons on hover */
+.tablink:hover {
+  background-color: #777;
 }
 
-/* The navigation links inside the overlay */
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block; /* Display block instead of inline */
-  transition: 0.3s; /* Transition effects on hover (color) */
+/* Set default styles for tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
 }
 
-/* When you mouse over the navigation links, change their color */
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
-}
-
-/* Position the close button (top right corner) */
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
-
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
-}
+/* Style each tab content individually */
+#filter {background-color:orangered;}
+#product {background-color:gold;}
+#cart {background-color:orange;}
+#done {background-color:coral;}

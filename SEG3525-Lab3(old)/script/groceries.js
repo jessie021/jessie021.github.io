@@ -8,8 +8,8 @@ var products = [
   vegetarian: true,
   glutenFree: true,
   price: 1.99,
-  organic: "false",
-  image: "broccoli.jpg"
+  organic: true,
+  image: "image/broccoli.jpg"
 
 },
 {
@@ -17,7 +17,7 @@ var products = [
   vegetarian: true,
   glutenFree: false,
   price: 2.35,
-  organic: "true",
+  organic: true,
   image: "bread.jpg"
 },
 {
@@ -25,15 +25,15 @@ var products = [
   vegetarian: false,
   glutenFree: true,
   price: 10.00,
-  organic: "true",
-  image: "salmon.jpg"
+  organic: true,
+  image: "image/salmon.jpg"
 },
 {
   name: "Apple",
   vegetarian: true,
   glutenFree: true,
   price: 0.89,
-  organic: "true",
+  organic: true,
   image: "apple.jpg"
 
 },
@@ -43,16 +43,16 @@ var products = [
   vegetarian: false,
   glutenFree: true,
   price: 9.99,
-  organic: "false",
-  image: "chicken.png"
+  organic: false,
+  image: "image/chicken.png"
 },
 {
   name: "Milk",
   vegetarian: true,
   glutenFree: true,
   price: 2.99,
-  organic: "false",
-  image: "milk.jpg"
+  organic: false,
+  image: "image/milk.jpg"
 },
 
 {
@@ -61,7 +61,7 @@ var products = [
   glutenFree: false,
   price: 2.75,
   organic: false,
-  image: "cookie.jpg"
+  image: "image/cookie.jpg"
 
 },
 {
@@ -69,8 +69,8 @@ var products = [
   vegetarian: true,
   glutenFree: true,
   price: 1.99,
-  organic: "true",
-  image: "nuts.jpg"
+  organic: true,
+  image: "image/nuts.jpg"
 
 },
 {
@@ -78,16 +78,16 @@ var products = [
   vegetarian: true,
   glutenFree: true,
   price: 3.55,
-  organic: "false",
-  image: "butter.jpg"
+  organic: false,
+  image: "image/butter.jpg"
 },
 {
   name: "Tuna",
   vegetarian: false,
   glutenFree: true,
   price: 7.99,
-  organic: "true",
-  image: "tuna.jpg"
+  organic: true,
+  image: "image/tuna.jpg"
 }
 ];
 
@@ -117,11 +117,6 @@ for (let i= 0; i<prods.length; i+=1) {
   else if (restriction == "None"){
     product_names.push(prods[i]);
   }
-  else if (restriction == "Organic"){
-    if (prods[i].organic == "true"){
-      product_names.push(prods[i]);
-    }
-  }
 }
 
 //inspired by https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
@@ -150,7 +145,6 @@ totalPrice = 0;
 for (let i=0; i<products.length; i+=1) {
   if (chosenProducts.indexOf(products[i].name) > -1){
     totalPrice += products[i].price;
-
   }
 }
 return totalPrice;

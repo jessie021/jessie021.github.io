@@ -1,26 +1,29 @@
+//the next two funttions where taken from https://www.w3schools.com/howto/howto_js_tab_header.asp
 
-// This function is called when any of the tab is clicked
-// It is adapted from https://www.w3schools.com/howto/howto_js_tabs.asp
+function openCity(cityName, elmnt, color) {
+  // Hide all elements with class="tabcontent" by default */
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
 
-function openInfo(evt, tabName) {
+  // Remove the background color of all tablinks/buttons
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
 
-	// Get all elements with class="tabcontent" and hide them
-	tabcontent = document.getElementsByClassName("tabcontent");
-	for (i = 0; i < tabcontent.length; i++) {
-		tabcontent[i].style.display = "none";
-	}
+  // Show the specific tab content
+  document.getElementById(cityName).style.display = "block";
 
-	// Get all elements with class="tablinks" and remove the class "active"
-	tablinks = document.getElementsByClassName("tablinks");
-	for (i = 0; i < tablinks.length; i++) {
-		tablinks[i].className = tablinks[i].className.replace(" active", "");
-	}
-
-	// Show the current tab, and add an "active" class to the button that opened the tab
-	document.getElementById(tabName).style.display = "block";
-	evt.currentTarget.className += " active";
-
+  // Add the specific color to the button used to open the tab content
+  elmnt.style.backgroundColor = color;
 }
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
 
 function checked(){
 	//get boolean value of checked boxe
@@ -86,7 +89,7 @@ function populateListProductChoices(slct1, slct2) {
  		s2.appendChild(document.createElement("br"));
 
 		var image = document.createElement('img');
-		image.setAttribute("src", "apple.jpg");
+		image.setAttribute("src", productI);
   	image.setAttribute("width", "105");
   	image.setAttribute("height", "100");
   	image.setAttribute("alt", " Image not Available");
