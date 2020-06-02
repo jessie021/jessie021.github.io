@@ -9,7 +9,7 @@ var products = [
   glutenFree: true,
   price: 1.99,
   organic: "true",
-  image: "image/broccoli.jpg"
+  image: "broccoli.jpg"
 
 },
 {
@@ -18,7 +18,7 @@ var products = [
   glutenFree: false,
   price: 2.35,
   organic: "true",
-  image: "image/bread.jpg"
+  image: "bread.jpg"
 },
 {
   name: "Salmon",
@@ -34,7 +34,7 @@ var products = [
   glutenFree: true,
   price: 0.89,
   organic: "true",
-  image: "image/apple.jpg"
+  image: "apple.jpg"
 
 },
 
@@ -150,7 +150,7 @@ totalPrice = 0;
 for (let i=0; i<products.length; i+=1) {
   if (chosenProducts.indexOf(products[i].name) > -1){
     totalPrice += products[i].price;
-    totalPrice.toFixed(2);
+
   }
 }
 return totalPrice;
