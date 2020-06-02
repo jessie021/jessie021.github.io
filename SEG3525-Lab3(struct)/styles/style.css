@@ -27,7 +27,7 @@ div{
 .diss3{
   border: black;
   padding: 14px 16px;
-  background-color:	maroon;
+  background-color:	gold;
 
 }
 
@@ -81,6 +81,6 @@ div{
 
 /* Style each tab content individually */
 #filter {background-color:orangered;}
-#product {background-color:maroon;}
+#product {background-color:gold;}
 #cart {background-color:orange;}
 #done {background-color:coral;}
