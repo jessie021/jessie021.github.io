@@ -8,7 +8,7 @@ var products = [
   vegetarian: true,
   glutenFree: true,
   price: 1.99,
-  organic: true,
+  organic: "true",
   image: "image/broccoli.jpg"
 
 },
@@ -17,7 +17,7 @@ var products = [
   vegetarian: true,
   glutenFree: false,
   price: 2.35,
-  organic: true,
+  organic: "true",
   image: "image/bread.jpg"
 },
 {
@@ -25,7 +25,7 @@ var products = [
   vegetarian: false,
   glutenFree: true,
   price: 10.00,
-  organic: true,
+  organic: "true",
   image: "image/salmon.jpg"
 },
 {
@@ -33,7 +33,7 @@ var products = [
   vegetarian: true,
   glutenFree: true,
   price: 0.89,
-  organic: true,
+  organic: "true",
   image: "image/apple.jpg"
 
 },
@@ -43,7 +43,7 @@ var products = [
   vegetarian: false,
   glutenFree: true,
   price: 9.99,
-  organic: false,
+  organic: "false",
   image: "image/chicken.png"
 },
 {
@@ -51,7 +51,7 @@ var products = [
   vegetarian: true,
   glutenFree: true,
   price: 2.99,
-  organic: false,
+  organic: "false",
   image: "image/milk.jpg"
 },
 
@@ -69,7 +69,7 @@ var products = [
   vegetarian: true,
   glutenFree: true,
   price: 1.99,
-  organic: true,
+  organic: "true",
   image: "image/nuts.jpg"
 
 },
@@ -78,7 +78,7 @@ var products = [
   vegetarian: true,
   glutenFree: true,
   price: 3.55,
-  organic: false,
+  organic: "false",
   image: "image/butter.jpg"
 },
 {
