@@ -9,7 +9,7 @@ var products = [
   glutenFree: true,
   price: 1.99,
   organic: "true",
-  image: broccoli.jpg
+  image: "image/broccoli.jpg"
 
 },
 {
@@ -18,7 +18,7 @@ var products = [
   glutenFree: false,
   price: 2.35,
   organic: "true",
-  image: "bread.jpg"
+  image: "image/bread.jpg"
 },
 {
   name: "Salmon",
@@ -34,7 +34,7 @@ var products = [
   glutenFree: true,
   price: 0.89,
   organic: "true",
-  image: "apple.jpg"
+  image: "image/apple.jpg"
 
 },
 
