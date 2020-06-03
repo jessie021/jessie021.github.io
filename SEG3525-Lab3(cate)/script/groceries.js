@@ -111,6 +111,7 @@ let product_names = [];
 let product_sorted_with_price = [];
 let image = [];
 let names = [];
+let group = [];
 
 for (let i= 0; i<prods.length; i+=1) {
 
@@ -140,17 +141,21 @@ for (let i= 0; i<prods.length; i+=1) {
  });
 
  for (let i = 0; i < product_names.length; i+=1){
-   product_sorted_with_price.push(product_names[i].price + "-" + product_names[i].name)
+   product_sorted_with_price.push(product_names[i].price + "-" + product_names[i].name);
  }
 
  for (let i = 0; i < product_names.length; i+=1){
-   names.push(product_names[i].name)
+   names.push(product_names[i].name);
  }
  for (let i = 0; i < product_names.length; i+=1){
-   image.push(product_names[i].image)
+   image.push(product_names[i].image);
  }
 
- return [product_sorted_with_price, names, image];
+ for (let i = 0; i < product_names.length; i+=1){
+   group.push(product_names[i].group);
+ }
+ 
+ return [product_sorted_with_price, names, image, group];
 
 }
 
