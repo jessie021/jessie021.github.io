@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp-->
+	<!-- This style sheet is taken from  https://www.w3schools.com/howto/howto_js_full_page_tabs.asp-->
 	<link href="styles/style.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -42,6 +42,23 @@
   <p>We filtered the products based on your preferences</p>
 	 Select the items you would like add to your cart:
 	 <div id="displayProduct" class="diss6" ></div>
+
+<!--accordian inspired from https://www.w3schools.com/howto/howto_js_accordion.asp-->
+	 <button class="accordion">Vegetables & Fruits</button>
+	 			<div class="panel">
+  				<p>Lorem ipsum...</p>
+				</div>
+
+	<button class="accordion">Meat & Dairy</button>
+				<div class="panel">
+  				<p>Lorem ipsum...</p>
+				</div>
+
+	<button class="accordion">Grains and Wheat</button>
+		<div class="panel">
+  		<p>Lorem ipsum...</p>
+		</div>
+
 	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
 		Add selected items to cart.
 	</button>
@@ -58,10 +75,11 @@
   <p>Thank you for shopping at Shoppars</p>
 </div>
 
-<button class="tablink" onclick="openCity('Filter Your Products', this, 'orangered')" id="defaultOpen">Filter Your Products</button>
-<button class="tablink" onclick="openCity('Products', this, 'gold')">Products</button>
-<button class="tablink" onclick="openCity('Cart', this, 'orange')">Cart</button>
-<button class="tablink" onclick="openCity('Done', this, 'coral')">Done</button> <br>
+
+<button class="tablink" onclick="open('Filter Your Products', this, 'orangered')" id="defaultOpen">Filter Your Products</button>
+<button class="tablink" onclick="open('Products', this, 'gold')">Products</button>
+<button class="tablink" onclick="open('Cart', this, 'orange')">Cart</button>
+<button class="tablink" onclick="open('Done', this, 'coral')">Done</button> <br>
 <br>
 <br>
 

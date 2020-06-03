@@ -1,6 +1,5 @@
 //the next two funttions where taken from https://www.w3schools.com/howto/howto_js_tab_header.asp
-
-function openCity(cityName, elmnt, color) {
+function open(pName, elmnt, color) {
   // Hide all elements with class="tabcontent" by default */
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -15,7 +14,7 @@ function openCity(cityName, elmnt, color) {
   }
 
   // Show the specific tab content
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(pName).style.display = "block";
 
   // Add the specific color to the button used to open the tab content
   elmnt.style.backgroundColor = color;
@@ -35,6 +34,25 @@ function openNav() {
 /* Close when someone clicks on the "x" symbol inside the overlay */
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
+}
+
+//This functions inspired by https://www.w3schools.com/howto/howto_js_accordion.asp
+var acc = document.getElementsByClassName("accordion");
+
+for (var i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
 }
 
 
