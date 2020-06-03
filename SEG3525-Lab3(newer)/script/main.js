@@ -59,9 +59,9 @@ for (var i = 0; i < acc.length; i++) {
 // generate a checkbox list from a list of products
 // it makes each product name as the label for the checkbos
 
-function populateListProductChoices(slct1, slct2, slct3, slct4, slct5) {
+function populateListProductChoices(slct1, slct3, slct4, slct5) {
     var s1 = document.getElementById(slct1);
-    var s2 = document.getElementById(slct2);
+    //var s2 = document.getElementById(slct2);
     var v1 = document.getElementById(slct5);
     var m1 = document.getElementById(slct4);
     var w1 = document.getElementById(slct3);
@@ -174,7 +174,7 @@ function populateListProductChoices(slct1, slct2, slct3, slct4, slct5) {
       // create a breakline node and add in HTML DOM
       w1.appendChild(document.createElement("br"));
     }
-
+    /*
 		// create the checkbox and add in HTML DOM
 		var checkbox = document.createElement("input");
 		checkbox.type = "checkbox";
@@ -200,7 +200,7 @@ function populateListProductChoices(slct1, slct2, slct3, slct4, slct5) {
 
 
 		// create a breakline node and add in HTML DOM
-		s2.appendChild(document.createElement("br"));
+		s2.appendChild(document.createElement("br"));*/
 	}
 
 }
