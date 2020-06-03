@@ -67,7 +67,7 @@ function populateListProductChoices(slct1, slct2, slct3, slct4, slct5) {
     var w1 = document.getElementById(slct3);
 
 	// s2 represents the <div> in the Products tab, which shows the product list, so we first set it empty
-    //s2.innerHTML = "";
+    s2.innerHTML = "";
     v1.innerHTML = "";
     m1.innerHTML = "";
     w1.innerHTML = "";
@@ -118,7 +118,7 @@ function populateListProductChoices(slct1, slct2, slct3, slct4, slct5) {
       // create a breakline node and add in HTML DOM
       v1.appendChild(document.createElement("br"));
 
-    }else if(productG == "meat"){
+    }if(productG == "meat"){
       // create the checkbox and add in HTML DOM
       var checkbox = document.createElement("input");
       checkbox.type = "checkbox";
@@ -131,9 +131,9 @@ function populateListProductChoices(slct1, slct2, slct3, slct4, slct5) {
       var label = document.createElement('label');
       label.htmlFor = productP;
       label.appendChild(document.createTextNode(productP)); //productName
-      m1.appendChild(label);
+     m1.appendChild(label);
 
-      m1.appendChild(document.createElement("br"));
+        m1.appendChild(document.createElement("br"));
 
       var image = document.createElement('img');
       image.setAttribute("src", productI);
@@ -147,13 +147,13 @@ function populateListProductChoices(slct1, slct2, slct3, slct4, slct5) {
       m1.appendChild(document.createElement("br"));
 
     }else if(productG == "wheat"){
-
+      // create the checkbox and add in HTML DOM
       var checkbox = document.createElement("input");
       checkbox.type = "checkbox";
       checkbox.name = "product";
       checkbox.value = productName;
 
-      w1.appendChild(checkbox);
+      s2.appendChild(checkbox);
 
       // create a label for the checkbox, and also add in HTML DOM
       var label = document.createElement('label');
@@ -175,8 +175,32 @@ function populateListProductChoices(slct1, slct2, slct3, slct4, slct5) {
       w1.appendChild(document.createElement("br"));
     }
 
+		// create the checkbox and add in HTML DOM
+		var checkbox = document.createElement("input");
+		checkbox.type = "checkbox";
+		checkbox.name = "product";
+		checkbox.value = productName;
+
+		s2.appendChild(checkbox);
+
+		// create a label for the checkbox, and also add in HTML DOM
+		var label = document.createElement('label');
+		label.htmlFor = productP;
+		label.appendChild(document.createTextNode(productP)); //productName
+		s2.appendChild(label);
+
+ 		s2.appendChild(document.createElement("br"));
+
+		var image = document.createElement('img');
+		image.setAttribute("src", productI);
+  	image.setAttribute("width", "105");
+  	image.setAttribute("height", "100");
+  	image.setAttribute("alt", " Image not Available");
+  	s2.appendChild(image);
 
 
+		// create a breakline node and add in HTML DOM
+		s2.appendChild(document.createElement("br"));
 	}
 }
 
