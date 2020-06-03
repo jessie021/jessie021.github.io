@@ -131,9 +131,9 @@ function populateListProductChoices(slct1, slct2, slct3, slct4, slct5) {
       var label = document.createElement('label');
       label.htmlFor = productP;
       label.appendChild(document.createTextNode(productP)); //productName
-     m1.appendChild(label);
+      m1.appendChild(label);
 
-        m1.appendChild(document.createElement("br"));
+      m1.appendChild(document.createElement("br"));
 
       var image = document.createElement('img');
       image.setAttribute("src", productI);
