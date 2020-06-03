@@ -8,7 +8,7 @@ var products = [
   vegetarian: true,
   glutenFree: true,
   price: 1.99,
-  organic: true
+  organic: false
 },
 {
   name: "bread",
@@ -29,7 +29,7 @@ var products = [
   vegetarian: true,
   glutenFree: true,
   price: 0.89,
-  organic: true
+  organic: false
 
 },
 
@@ -45,7 +45,7 @@ var products = [
   vegetarian: true,
   glutenFree: true,
   price: 2.99,
-  organic: false
+  organic: true
 },
 
 {
