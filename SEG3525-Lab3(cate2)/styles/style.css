@@ -11,6 +11,9 @@ div{
   background-color: red;
 }
 
+.black{
+  color: black;
+}
 .diss{
   border: 10px black;
   padding: 14px 16px;

@@ -181,10 +181,26 @@ function populateListProductChoices(slct1, slct2,slct3, slct4, slct5) {
 		checkbox.name = "product";
 		checkbox.value = productName;
 
-		s2.appendChild("");
+		s2.appendChild(checkbox);
 
 		// create a label for the checkbox, and also add in HTML DOM
-    s2.innerHTML = "";
+		var label = document.createElement('label');
+		label.htmlFor = productP;
+		label.appendChild(document.createTextNode(productP)); //productName
+		s2.appendChild(label);
+
+ 		s2.appendChild(document.createElement("br"));
+
+		var image = document.createElement('img');
+		image.setAttribute("src", productI);
+  	image.setAttribute("width", "105");
+  	image.setAttribute("height", "100");
+  	image.setAttribute("alt", " Image not Available");
+  	s2.appendChild(image);
+
+
+		// create a breakline node and add in HTML DOM
+		s2.appendChild(document.createElement("br"));*/
 	}
 
 }
