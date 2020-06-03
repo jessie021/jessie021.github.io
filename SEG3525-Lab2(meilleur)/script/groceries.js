@@ -95,15 +95,16 @@ var isOrganic = document.getElementById("organicOnly");
   if (isOrganic.checked){
     for (let i= 0; i<prods.length; i+=1) {
         if ((restriction == "Vegetarian") && (prods[i].vegetarian == true) && (prods[i].organic == true)){
-          product_names.push(prods[i]);
+            product_names.push(prods[i]);
         }
         else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true) && (prods[i].organic == true)){
-          product_names.push(prods[i]);
+            product_names.push(prods[i]);
         }
         else if ((restriction == "GlutenFree&Vegetarian") && (prods[i].vegetarian == true)  && (prods[i].glutenFree == true) && (prods[i].organic == true) ){
-          product_names.push(prods[i]);
-        }else if (restriction == "None" && (prods[i].organic == true)){
-          product_names.push(prods[i]);
+            product_names.push(prods[i]);
+        }
+        else if (restriction == "None" && (prods[i].organic == true)){
+            product_names.push(prods[i]);
         }
      }
    }else{
