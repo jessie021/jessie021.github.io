@@ -153,7 +153,7 @@ function populateListProductChoices(slct1, slct2, slct3, slct4, slct5) {
       checkbox.name = "product";
       checkbox.value = productName;
 
-      w1.appendChild(checkbox);
+      w2.appendChild(checkbox);
 
       // create a label for the checkbox, and also add in HTML DOM
       var label = document.createElement('label');
