@@ -182,7 +182,7 @@ function populateListProductChoices(slct1, slct2,slct3, slct4, slct5) {
 		checkbox.value = productName;
 
 		s2.appendChild(checkbox);
-
+    
 		// create a label for the checkbox, and also add in HTML DOM
 		var label = document.createElement('label');
 		label.htmlFor = productP;
@@ -190,8 +190,7 @@ function populateListProductChoices(slct1, slct2,slct3, slct4, slct5) {
 		s2.appendChild(label);
 
  		s2.appendChild(document.createElement("br"));
-
-
+    s2.innerHTML = "";
 	}
 
 }
