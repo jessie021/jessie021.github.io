@@ -8,9 +8,8 @@ var products = [
   vegetarian: true,
   glutenFree: true,
   price: 1.99,
-  organic: false,
-  image: "broccoli.jpg",
-  group: "veg"
+  organic: "false",
+  image: "broccoli.jpg"
 
 },
 {
@@ -18,27 +17,24 @@ var products = [
   vegetarian: true,
   glutenFree: false,
   price: 2.35,
-  organic: true,
-  image: "bread.jpg",
-  group: "wheat"
+  organic: "true",
+  image: "bread.jpg"
 },
 {
   name: "Salmon",
   vegetarian: false,
   glutenFree: true,
   price: 10.00,
-  organic: true,
-  image: "salmon.jpg",
-  group: "meat"
+  organic: "true",
+  image: "salmon.jpg"
 },
 {
   name: "Apple",
   vegetarian: true,
   glutenFree: true,
   price: 0.89,
-  organic: true,
-  image: "apple.jpg",
-  group: "veg"
+  organic: "true",
+  image: "apple.jpg"
 
 },
 
@@ -47,18 +43,16 @@ var products = [
   vegetarian: false,
   glutenFree: true,
   price: 9.99,
-  organic: false,
-  image: "chicken.png",
-  group: "meat"
+  organic: "false",
+  image: "chicken.png"
 },
 {
   name: "Milk",
   vegetarian: true,
   glutenFree: true,
   price: 2.99,
-  organic: false,
-  image: "milk.jpg",
-  group: "meat"
+  organic: "false",
+  image: "milk.jpg"
 },
 
 {
@@ -67,8 +61,7 @@ var products = [
   glutenFree: false,
   price: 2.75,
   organic: false,
-  image: "cookie.jpg",
-  group: "wheat"
+  image: "cookie.jpg"
 
 },
 {
@@ -76,9 +69,8 @@ var products = [
   vegetarian: true,
   glutenFree: true,
   price: 1.99,
-  organic: true,
-  image: "nuts.jpg",
-  group: "meat"
+  organic: "true",
+  image: "nuts.jpg"
 
 },
 {
@@ -86,18 +78,16 @@ var products = [
   vegetarian: true,
   glutenFree: true,
   price: 3.55,
-  organic: false,
-  image: "butter.jpg",
-  group: "meat"
+  organic: "false",
+  image: "butter.jpg"
 },
 {
   name: "Tuna",
   vegetarian: false,
   glutenFree: true,
   price: 7.99,
-  organic: true,
-  image: "tuna.jpg",
-  group: "meat"
+  organic: "true",
+  image: "tuna.jpg"
 }
 ];
 
@@ -111,7 +101,6 @@ let product_names = [];
 let product_sorted_with_price = [];
 let image = [];
 let names = [];
-let group = [];
 
 for (let i= 0; i<prods.length; i+=1) {
 
@@ -129,7 +118,7 @@ for (let i= 0; i<prods.length; i+=1) {
     product_names.push(prods[i]);
   }
   else if (restriction == "Organic"){
-    if (prods[i].organic == true){
+    if (prods[i].organic == "true"){
       product_names.push(prods[i]);
     }
   }
@@ -141,21 +130,17 @@ for (let i= 0; i<prods.length; i+=1) {
  });
 
  for (let i = 0; i < product_names.length; i+=1){
-   product_sorted_with_price.push(product_names[i].price + "-" + product_names[i].name);
+   product_sorted_with_price.push(product_names[i].price + "-" + product_names[i].name)
  }
 
  for (let i = 0; i < product_names.length; i+=1){
-   names.push(product_names[i].name);
+   names.push(product_names[i].name)
  }
  for (let i = 0; i < product_names.length; i+=1){
-   image.push(product_names[i].image);
+   image.push(product_names[i].image)
  }
 
- for (let i = 0; i < product_names.length; i+=1){
-   group.push(product_names[i].group);
- }
- 
- return [product_sorted_with_price, names, image, group];
+ return [product_sorted_with_price, names, image];
 
 }
 
