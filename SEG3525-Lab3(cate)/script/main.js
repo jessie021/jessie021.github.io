@@ -118,7 +118,7 @@ function populateListProductChoices(slct1, slct2, slct3, slct4, slct5) {
       // create a breakline node and add in HTML DOM
       v1.appendChild(document.createElement("br"));
 
-    }if(productG == "meat"){
+    }else if(productG == "meat"){
       // create the checkbox and add in HTML DOM
       var checkbox = document.createElement("input");
       checkbox.type = "checkbox";
@@ -202,6 +202,7 @@ function populateListProductChoices(slct1, slct2, slct3, slct4, slct5) {
 		// create a breakline node and add in HTML DOM
 		s2.appendChild(document.createElement("br"));
 	}
+
 }
 
 // This function is called when the "Add selected items to cart" button in clicked
