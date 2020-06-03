@@ -24,7 +24,7 @@
 	Choose a Preference:
 
 	<br>
-	<select id="dietSelect" size= "6" name="dietSelect" onchange="populateListProductChoices(this.id,'displayWheat', 'displayMeat','displayVeg')">
+	<select id="dietSelect" size= "6" name="dietSelect" onchange="populateListProductChoices(this.id,'displayProduct', 'displayWheat', 'displayMeat','displayVeg')">
 		<option value=""></option>
 		<option value="Vegetarian">Vegetarian</option>
 		<option value="GlutenFree">Gluten Intolorence</option>
@@ -41,7 +41,7 @@
 	<h3>Here are your filtered products </h3>
   <p>We filtered the products based on your preferences</p>
 	 Select the items you would like add to your cart:
-  
+  <div id="displayProduct" class="diss6" ></div>
 <!--accordian inspired from https://www.w3schools.com/howto/howto_js_accordion.asp-->
 	 <button class="accordion">Vegetables & Fruits</button>
 	 			<div class="panel">
