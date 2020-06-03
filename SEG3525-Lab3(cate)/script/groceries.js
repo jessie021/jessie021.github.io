@@ -9,7 +9,8 @@ var products = [
   glutenFree: true,
   price: 1.99,
   organic: false,
-  image: "broccoli.jpg"
+  image: "broccoli.jpg",
+  group: "veg"
 
 },
 {
@@ -18,7 +19,8 @@ var products = [
   glutenFree: false,
   price: 2.35,
   organic: true,
-  image: "bread.jpg"
+  image: "bread.jpg",
+  group: "wheat"
 },
 {
   name: "Salmon",
@@ -26,7 +28,8 @@ var products = [
   glutenFree: true,
   price: 10.00,
   organic: true,
-  image: "salmon.jpg"
+  image: "salmon.jpg",
+  group: "meat"
 },
 {
   name: "Apple",
@@ -34,7 +37,8 @@ var products = [
   glutenFree: true,
   price: 0.89,
   organic: true,
-  image: "apple.jpg"
+  image: "apple.jpg",
+  group: "veg"
 
 },
 
@@ -44,7 +48,8 @@ var products = [
   glutenFree: true,
   price: 9.99,
   organic: false,
-  image: "chicken.png"
+  image: "chicken.png",
+  group: "meat"
 },
 {
   name: "Milk",
@@ -52,7 +57,8 @@ var products = [
   glutenFree: true,
   price: 2.99,
   organic: false,
-  image: "milk.jpg"
+  image: "milk.jpg",
+  group: "meat"
 },
 
 {
@@ -61,7 +67,8 @@ var products = [
   glutenFree: false,
   price: 2.75,
   organic: false,
-  image: "cookie.jpg"
+  image: "cookie.jpg",
+  group: "wheat"
 
 },
 {
@@ -70,7 +77,8 @@ var products = [
   glutenFree: true,
   price: 1.99,
   organic: true,
-  image: "nuts.jpg"
+  image: "nuts.jpg",
+  group: "meat"
 
 },
 {
@@ -79,7 +87,8 @@ var products = [
   glutenFree: true,
   price: 3.55,
   organic: false,
-  image: "butter.jpg"
+  image: "butter.jpg",
+  group: "meat"
 },
 {
   name: "Tuna",
@@ -87,7 +96,8 @@ var products = [
   glutenFree: true,
   price: 7.99,
   organic: true,
-  image: "tuna.jpg"
+  image: "tuna.jpg",
+  group: "meat"
 }
 ];
 
