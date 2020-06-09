@@ -15,3 +15,13 @@ h1 {
   background: purple;
 
 }
+
+.error {
+  background-color: yellow;
+  color : red;
+}
+
+
+.showInput {
+  background-color: pink;
+}
