@@ -63,26 +63,26 @@
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#third"><img src="images/logo.png" alt="logo">About</a>
+            <a class="nav-link" href="#first"><img src="images/logo.png" alt="logo">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#first"><img src="images/logo.png" alt="logo" style="width:30px;">Service</a>
+            <a class="nav-link" href="#second"><img src="images/logo.png" alt="logo" style="width:30px;">Service Description</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#second"><img src="images/logo.png" alt="logo" style="width:30px;">Expert</a>
+            <a class="nav-link" href="#thrid"><img src="images/logo.png" alt="logo" style="width:30px;">Meet our Hairdressers</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#third"><img src="images/logo.png" alt="logo">More Information</a>
+            <a class="nav-link" href="#fourth"><img src="images/logo.png" alt="logo" style="width:30px;">More Information</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#third"><img src="images/logo.png" alt="logo">Book an Appointment</a>
+            <a class="nav-link" href="#fifth"><img src="images/logo.png" alt="logo" style="width:30px;">Book an Appointment</a>
           </li>
         </ul>
       </div>
     </nav>
 
     <!-- When you have messages to tell, remember that center align is not always the best choice -->
-    <div class="container-md p-3 my-3 border bg-dark text-white">
+    <div class="container-md p-3 my-3 border bg-dark text-white" id="first">
         <h3>Let us tell you about our expertise</h3>
         <p>Fresh CUTS is one of the cities oldest establishments. We have been cutting hair since 1955. Our workers are all expert hairdressers and at every visit they have your best interest in mind. We garantee that you will be satisfied with your hair cut.</p>
 
@@ -90,8 +90,8 @@
 
     <!-- Bootstrap has different types of tables https://www.w3schools.com/bootstrap4/bootstrap_tables.asp -->
     <!-- Might be (or not) useful to show some information to the user -->
-    <div class="container bg-white ">
-        <h2>Service description</h2>
+    <div class="container bg-white" id="second">
+        <h2>Service Description</h2>
         <p>Here is a list of services offered</p>
         <table class="table table-info table-hover bg-light">
             <thead>
@@ -133,8 +133,8 @@
     <!-- Card columns allows multiple cards next to each other -->
     <!-- The first card's button doesn't go anywhere, it could be a modal -->
     <!-- My second card limits the information seen and uses collapsible to show more -->
-    <div class="container p-3 ">
-        <h2>Meet our hairdressers</h2>
+    <div class="container p-3 " id="third">
+        <h2>Meet our Hairdressers</h2>
         <div class="card-columns">
             <div class="card bg-light" style="width:200px">
                 <img class="card-img-top" src="images/Jule.jpg" alt="Card image" style="width:100%">
@@ -168,7 +168,7 @@
     <!-- A different approach would be to make the whole staff information collapsible -->
     <!-- Here a block button (taking the full width) opens/closes the collapsible -->
     <!-- Here a single card is used, but card columns could be used -->
-    <div class="container bg-light ">
+    <div class="container bg-light" id="fourth">
         <h2>More information</h2>
         <a href="#location" class="btn btn-primary btn-block purple" data-toggle="collapse">Our Locations</a>
         <div id="location" class="collapse">
@@ -193,7 +193,7 @@
     <!-- https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp -->
     <!-- As we want to do a vertical navigation better suited for mobile design, an accordion pattern -->
     <!-- could work well.  You can use other patterns too.  This is just an example. -->
-    <div class="container ">
+    <div class="container" id="fifth">
         <div class="container-md p-3 my-3 border bg-info text-white">
             <h1>Book an Appointment</h1>
             <p></p>
