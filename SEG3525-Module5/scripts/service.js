@@ -31,6 +31,19 @@ function validateDebit(txtDebit) {
     }
 }
 
+function validateDebit(txtEmail) {
+    var a = document.getElementById(txtEmail).value;
+    // This filter asks for correct email format. inspired by https://www.w3resource.com/javascript/form/email-validation.php
+    // of digits
+    var filter = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if (filter.test(a)) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
 // Using date restrictions on datepicker
 // Document of datepicker is here: https://api.jqueryui.com/datepicker/
 // The following code shows how to set specific dates to exclude, as well as Sundays (Day 0)
@@ -75,6 +88,18 @@ $(document).ready(function(){
         }
         else {
             $("#debit").removeClass("error");
+        }
+    });
+
+
+    $("#email").on("change", function(){
+        if (!validateDebit("email")){
+            alert("Wrong format for email");
+            $("#email").val("_______@____.__");
+            $("#email").addClass("error");
+        }
+        else {
+            $("#email").removeClass("error");
         }
     });
 
