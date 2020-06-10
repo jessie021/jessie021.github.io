@@ -46,7 +46,7 @@ $(document).ready(function(){
     $("#phone").on("change", function(){
         if (!validatePhone("phone")){
             alert("Wrong format for phone");
-            $("#phone").val("(xxxx)");
+            $("#phone").val("(xxx)-xxx-xxxx");
             $("#phone").addClass("error");
         }
         else {
@@ -93,6 +93,24 @@ $(document).ready(function(){
           "ui-tooltip": "highlight"
         }
       });
+
+      $("#phone").tooltip({
+          classes: {
+            "ui-tooltip": "highlight"
+          }
+        });
+
+      $("#name").tooltip({
+          classes: {
+            "ui-tooltip": "highlight"
+          }
+        });
+
+      $("#email").tooltip({
+          classes: {
+            "ui-tooltip": "highlight"
+          }
+       });
 
 
 });
