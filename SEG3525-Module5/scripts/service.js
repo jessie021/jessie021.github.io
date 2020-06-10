@@ -31,6 +31,8 @@ function disableDates(date) {
     // Sunday is Day 0, disable all Sundays
     if (date.getDay() == 0)
         return [false];
+    if (date.getDay() == 7)
+        return [false];
     var string = jQuery.datepicker.formatDate(setDateFormat, date);
     return [ unavailableDates.indexOf(string) == -1 ]
 }
@@ -46,7 +48,7 @@ $(document).ready(function(){
     $("#phone").on("change", function(){
         if (!validatePhone("phone")){
             alert("Wrong format for phone");
-            $("#phone").val("(xxxx)");
+            $("#phone").val("(xxx)-xxx-xxxx");
             $("#phone").addClass("error");
         }
         else {
@@ -89,6 +91,12 @@ $(document).ready(function(){
     // The class "highlight" used here is predefined in JQuery UI
     // the message of the tooltip is encoded in the input (in the HTML file)
     $("#debit").tooltip({
+        classes: {
+          "ui-tooltip": "highlight"
+        }
+      });
+
+    $("#dateInput").tooltip({
         classes: {
           "ui-tooltip": "highlight"
         }
