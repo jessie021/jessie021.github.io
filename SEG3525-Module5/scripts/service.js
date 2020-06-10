@@ -113,6 +113,7 @@ $(document).ready(function(){
     // https://jqueryui.com/tooltip/
     // The class "highlight" used here is predefined in JQuery UI
     // the message of the tooltip is encoded in the input (in the HTML file)
+    /*
     $("#debit").tooltip({
         classes: {
           "ui-tooltip": "highlight"
@@ -135,7 +136,7 @@ $(document).ready(function(){
           classes: {
             "ui-tooltip": "highlight"
           }
-       });
+       });*/
 
 
 });
