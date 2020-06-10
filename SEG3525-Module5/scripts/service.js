@@ -10,7 +10,8 @@ function validatePhone(txtPhone) {
     var a = document.getElementById(txtPhone).value;
     // This filter asks for something like (12345), so parentheses with any number (at least 1)
     // of digits
-    var filter = /^(\([-+]?[0-9]+)\)$/;
+    //regex inspired by https://stackoverflow.com/questions/19840301/jquery-to-validate-phone-number
+    var filter = /^((\+[1-9]{1,4}[ \-]*)|(\([0-9]{2,3}\)[ \-]*)|([0-9]{2,4})[ \-]*)*?[0-9]{3,4}?[ \-]*[0-9]{3,4}?$/;
     if (filter.test(a)) {
         return true;
     }
@@ -19,6 +20,19 @@ function validatePhone(txtPhone) {
     }
 }
 
+function validateDebit(txtDebit) {
+    var a = document.getElementById(txtDebit).value;
+    // This filter asks for something like (12345), so parentheses with any number (at least 1)
+    // of digits
+    //regex inspired by https://stackoverflow.com/questions/19840301/jquery-to-validate-phone-number
+    var filter = 5[1-5]\ d{ 14}; //regex for master card inspired by https://www.informit.com/articles/article.aspx?p=1223879&seqNum=12
+    if (filter.test(a)) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
 
 // Using date restrictions on datepicker
 // Document of datepicker is here: https://api.jqueryui.com/datepicker/
@@ -101,6 +115,23 @@ $(document).ready(function(){
           "ui-tooltip": "highlight"
         }
       });
+
+      $("#phone").tooltip({
+          classes: {
+            "ui-tooltip": "highlight"
+          }
+        });
+
+        $("#name").tooltip({
+            classes: {
+              "ui-tooltip": "highlight"
+            }
+          });
+        $("#email").tooltip({
+            classes: {
+              "ui-tooltip": "highlight"
+            }
+          });
 
 
 });
