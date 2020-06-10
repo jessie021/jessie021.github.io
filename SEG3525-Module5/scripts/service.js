@@ -8,9 +8,9 @@
 // or numbers
 function validatePhone(txtPhone) {
     var a = document.getElementById(txtPhone).value;
-    // This filter asks for something like (12345), so parentheses with any number (at least 1)
+    // This filter asks for something like (123) 392-2344  inspired by https://www.baeldung.com/java-regex-validate-phone-numbers
     // of digits
-    var filter = /^(\([-+]?[0-9]+)\)$/;
+    var filter = /^((\\(\\d{3}\\))|\\d{3})[- .]?\\d{3}[- .]?\\d{4}$/;
     if (filter.test(a)) {
         return true;
     }
@@ -19,6 +19,18 @@ function validatePhone(txtPhone) {
     }
 }
 
+function validateDebit(txtDebit) {
+    var a = document.getElementById(txtDebit).value;
+    // This filter asks for Discover card numbers begin with 6011 or 65. All have 16 digits. inspired by https://www.regular-expressions.info/creditcard.html
+    // of digits
+    var filter = /^6(?:011|5[0-9]{2})[0-9]{12}$/;
+    if (filter.test(a)) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
 
 // Using date restrictions on datepicker
 // Document of datepicker is here: https://api.jqueryui.com/datepicker/
@@ -46,13 +58,30 @@ $(document).ready(function(){
     $("#phone").on("change", function(){
         if (!validatePhone("phone")){
             alert("Wrong format for phone");
-            $("#phone").val("(xxx)-xxx-xxxx");
+            $("#phone").val("(xxx) xxx-xxxx");
             $("#phone").addClass("error");
         }
         else {
             $("#phone").removeClass("error");
         }
     });
+
+
+    //dedit number validation
+    $("#debit").on("change", function(){
+        if (!validateDebit("debit")){
+            alert("Wrong format for credit");
+            $("#debit").val("xxxx-xxxx-xxxx-xxxx");
+            $("#debit").addClass("error");
+        }
+        else {
+            $("#debit").removeClass("error");
+        }
+    });
+
+
+
+
 
     // To change the style of the calender, look in jqueryui.com, under Themes, in the ThemeRoller Gallery
     // You can try different themes (the names are under the calendars) / This is Excite Bike
