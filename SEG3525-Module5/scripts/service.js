@@ -110,28 +110,23 @@ $(document).ready(function(){
         }
       });
 
-    $("#dateInput").tooltip({
+    $("#phone").tooltip({
         classes: {
           "ui-tooltip": "highlight"
         }
       });
 
-      $("#phone").tooltip({
-          classes: {
-            "ui-tooltip": "highlight"
-          }
-        });
+    $("#name").tooltip({
+        classes: {
+          "ui-tooltip": "highlight"
+        }
+      });
 
-        $("#name").tooltip({
-            classes: {
-              "ui-tooltip": "highlight"
-            }
-          });
-        $("#email").tooltip({
-            classes: {
-              "ui-tooltip": "highlight"
-            }
-          });
+    $("#email").tooltip({
+        classes: {
+          "ui-tooltip": "highlight"
+        }
+     });
 
 
 });
