@@ -53,10 +53,16 @@ const setDateFormat = "mm/dd/yy";
 
 function disableDates(date) {
     // Sunday is Day 0, disable all Sundays
-    var expert = document.getElementById("expert").value;
-
-    if (date.getDay() == 0 || date.getDay() == 1)
+    var expertNumber = document.getElementById("expert").value;
+    //1 is Jule et 2 is Kathy
+    if (expert == 1){ //if Jule selected block day
+      if (date.getDay() == 0 || date.getDay() == 6 || date.getDay() == 1)
+          return [false];
+    }if (expert == 2){
+     (date.getDay() == 0 || date.getDay() == 1 || date.getDay() == 2)
         return [false];
+    }
+
 
     var string = jQuery.datepicker.formatDate(setDateFormat, date);
     return [ unavailableDates.indexOf(string) == -1 ]
