@@ -59,7 +59,7 @@ function disableDates(date) {
       if (date.getDay() == 0 || date.getDay() == 6 || date.getDay() == 1)
           return [false];
     }if (expertNumber == 2){
-     (date.getDay() == 0 || date.getDay() == 1 || date.getDay() == 2)
+       if (date.getDay() == 0 || date.getDay() == 1 || date.getDay() == 2)
         return [false];
     }
 
