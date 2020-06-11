@@ -83,7 +83,7 @@ $(document).ready(function(){
     $("#debit").on("change", function(){
         if (!validateDebit("debit")){
             alert("Wrong format for credit");
-            $("#debit").val("xxxx-xxxx-xxxx-xxxx");
+            $("#debit").val("xxxx xxxx xxxx xxxx");
             $("#debit").addClass("error");
         }
         else {
