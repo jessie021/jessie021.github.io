@@ -55,10 +55,9 @@ function disableDates(date) {
     // Sunday is Day 0, disable all Sundays
     var expert = document.getElementById(expert).value;
 
-    if (date.getDay() == 0)
+    if (date.getDay() == 0 || date.getDay() == 1)
         return [false];
-    if (date.getDay() == 7)
-        return [false];
+
     var string = jQuery.datepicker.formatDate(setDateFormat, date);
     return [ unavailableDates.indexOf(string) == -1 ]
 }
