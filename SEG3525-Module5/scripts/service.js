@@ -22,7 +22,7 @@ function validateDebit(txtDebit) {
     var a = document.getElementById(txtDebit).value;
     // This filter asks for Discover card numbers begin with 6011 or 65. All have 16 digits. inspired by https://stackoverflow.com/questions/40775674/credit-card-input-validation-using-regular-expression-in-javascript
     // of digits
-    var filter = /^(?:6(?:011|5[0-9][0-9])[0-9]{12})$/;
+    var filter =  /[0-9]{4} {0,1}[0-9]{4} {0,1}[0-9]{4} {0,1}[0-9]{4}/;
     if (filter.test(a)) {
         return true;
     }
@@ -70,7 +70,7 @@ $(document).ready(function(){
     $("#phone").on("change", function(){
         if (!validatePhone("phone")){
             alert("Wrong format for phone");
-            $("#phone").val("(xxx) xxx-xxxx");
+            $("#phone").val("xxx-xxx-xxxx");
             $("#phone").addClass("error");
         }
         else {
