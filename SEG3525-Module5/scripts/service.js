@@ -20,9 +20,9 @@ function validatePhone(txtPhone) {
 
 function validateDebit(txtDebit) {
     var a = document.getElementById(txtDebit).value;
-    // This filter asks for Discover card numbers begin with 6011 or 65. All have 16 digits. inspired by https://stackoverflow.com/questions/40775674/credit-card-input-validation-using-regular-expression-in-javascript
+    // This filter asks for master card numbers begin with 51 or. All have 16 digits. inspired by https://stackoverflow.com/questions/40775674/credit-card-input-validation-using-regular-expression-in-javascript
     // of digits
-    var filter =  /[0-9]{4} {0,1}[0-9]{4} {0,1}[0-9]{4} {0,1}[0-9]{4}/;
+    var filter =  /^[0-9]{16}$/;
     if (filter.test(a)) {
         return true;
     }
