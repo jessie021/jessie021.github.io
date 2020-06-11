@@ -31,7 +31,7 @@ function validateDebit(txtDebit) {
     }
 }
 
-function validateDebit(txtEmail) {
+function validateEmail(txtEmail) {
     var a = document.getElementById(txtEmail).value;
     // This filter asks for correct email format. inspired by https://www.w3resource.com/javascript/form/email-validation.php
     // of digits
@@ -96,7 +96,7 @@ $(document).ready(function(){
 
 
     $("#email").on("change", function(){
-        if (!validateDebit("email")){
+        if (!validateEmail("email")){
             alert("Wrong format for email");
             $("#email").val("_______@____.__");
             $("#email").addClass("error");
