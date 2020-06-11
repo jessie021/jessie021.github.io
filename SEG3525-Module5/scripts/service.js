@@ -53,7 +53,7 @@ const setDateFormat = "mm/dd/yy";
 
 function disableDates(date) {
     // Sunday is Day 0, disable all Sundays
-    var expert = document.getElementById(expert).value;
+    var expert = document.getElementById("expert").value;
 
     if (date.getDay() == 0 || date.getDay() == 1)
         return [false];
