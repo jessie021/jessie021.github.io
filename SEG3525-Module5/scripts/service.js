@@ -20,7 +20,7 @@ function validatePhone(txtPhone) {
 
 function validateDebit(txtDebit) {
     var a = document.getElementById(txtDebit).value;
-    // This filter asks for master card numbers begin with 51 or. All have 16 digits. inspired by https://stackoverflow.com/questions/40775674/credit-card-input-validation-using-regular-expression-in-javascript
+    // This filter asks for xxxx xxxx xxxx xxxxx digits  developper à l'aide de https://regex101.com/
     // of digits
     var filter = /^\d{4}\s\d{4}\s\d{4}\s\d{4}$/;
     if (filter.test(a)) {
