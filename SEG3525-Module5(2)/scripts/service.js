@@ -22,7 +22,7 @@ function validateDebit(txtDebit) {
     var a = document.getElementById(txtDebit).value;
     // This filter asks for master card numbers begin with 51 or. All have 16 digits. inspired by https://stackoverflow.com/questions/40775674/credit-card-input-validation-using-regular-expression-in-javascript
     // of digits
-    var filter =  /^\d{4}\s\d{4}\s\d{4}\s\d{4}$/;
+    var filter =  /^(\d{4}[- ]){3}\d{4}|\d{16}$/;
     if (filter.test(a)) {
         return true;
     }
@@ -54,7 +54,7 @@ const setDateFormat = "mm/dd/yy";
 function disableDates(date) {
     // Sunday is Day 0, disable all Sundays
     var expert = document.getElementById(expert).value;
-
+    
     if (date.getDay() == 0)
         return [false];
     if (date.getDay() == 7)

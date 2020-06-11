@@ -1,0 +1,27 @@
+
+/* Style sheet
+   color picker www.w3schools.com/colors/colors_picker.asp
+*/
+
+/* Bootstrap default font-family is Helvetica Neue */
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  text-shadow: 3px 3px 1px black;
+
+}
+
+.purple{
+
+  background: purple;
+
+}
+
+.error {
+  background-color: yellow;
+  color : red;
+}
+
+
+.showInput {
+  background-color: lightgrey;
+}
