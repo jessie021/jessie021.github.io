@@ -1,0 +1,60 @@
+h1 {
+  color: yellowgreen;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 300%;
+
+}
+h4, h2, h3, h5{
+  font-family: Arial, Helvetica, sans-serif;
+  color: yellowgreen;
+  font-size: 100%
+}
+
+form{
+  width: 85%;
+}
+
+p{
+  color: green;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+}
+
+div {
+  border: 3px outset yellowgreen;
+  border-radius: 10px;
+  background-color: whiteSmoke;
+  text-align: center;
+  margin-bottom: 4px
+}
+
+button{
+  border-radius: 25px;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  background-color: white;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+}
+
+table{
+  width: 100%
+  border: 1px solid black;
+
+}
+
+th{
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+td{
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
