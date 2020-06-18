@@ -1,4 +1,4 @@
-// jQuery that will "listen" to the html index.html
+// jQuery that will "listen" to the html websitesurvey.html
 $(document).ready(function(){
 
   $('form').on('submit', function(){
@@ -8,7 +8,7 @@ $(document).ready(function(){
 
       $.ajax({
         type: 'POST',
-        url: '/index',
+        url: '/websitesurvey',
         data: $(this).serializeArray(),
         success: function(data){
           // do something with the data via front-end framework
