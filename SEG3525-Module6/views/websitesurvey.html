@@ -47,31 +47,34 @@
 <br>
 <br>
 
-<center><form name = "myform">
+<center><form>
 
 <div class= "container-md p-3 my-3 border bg-light">
 <h4>
-  Q1. Quelle est votre première impression de la mise en page du Site Web: <br><input type ="text" name="firstQ">
+  Q1. Quelle est votre première impression de la mise en page du Site Web: <br><input type ="text" name="question1" required >
 </h4><br>
 </div>
 
 <div class="container-md p-3 my-3 border bg-light">
 <h4>Q2. Quel aspect du Site Web nécessite le plus d'amélioration parmi les choix suivant:  </h4><br>
-Choix de couleur: <input type ="radio" name="secondQ" value= "1"><br>
-Proximité des liens: <input type ="radio" name="secondQ" value= "2"><br>
-Mise en page: <input type ="radio" name="secondQ" value= "3"><br>
+  Choix de couleur:
+  <input type ="radio" name="question2" value= "couleur"><br>
+  Proximité des liens:
+  <input type ="radio" name="question2" value= "proximité-des-liens"><br>
+  Mise en page:
+  <input type ="radio" name="question2" value= "mise-en-page"><br>
 <br>
 </div>
 
 <div class="container-md p-3 my-3 border bg-light">
   <h4>Q3. Selectionnez le but le plus reussi. </h4><br>
-  <select name="but class="custom-select>
-    <option value= "1">Cohérence</option>
-    <option value= "2">Fonctionnalité</option>
-    <option value= "3">Efficacité</option>
-    <option value= "4">Utilisabilité</option>
-    <option value= "5">Sécurité des données</option>
-    <option value= "6">Fiabilité</option>
+  <select name="question3" class="custom-select">
+    <option value= "cohérence">Cohérence</option>
+    <option value= "fonctionnalité">Fonctionnalité</option>
+    <option value= "efficacité">Efficacité</option>
+    <option value= "utilisabilité">Utilisabilité</option>
+    <option value= "sécurité-de-données">Sécurité des données</option>
+    <option value= "fiabilité">Fiabilité</option>
   </select>
   <br>
   <br>
@@ -80,16 +83,19 @@ Mise en page: <input type ="radio" name="secondQ" value= "3"><br>
 
 <div class="container-md p-3 my-3 border bg-light">
   <h4>Q4. Pensez-vous facilement pouvoir utiliser ce Site Web? </h4><br>
-  Oui: <input type ="radio" name="fourthQ" value= "1"><br>
-  Non: <input type ="radio" name="fourthQ" value= "2"><br>
+    Oui: <input type ="radio" name="question4" value= "oui"><br>
+    Non: <input type ="radio" name="question4" value= "non"><br>
  <br>
 </div>
 
 <div class="container-md p-3 my-3 border bg-light">
   <h4>Q5. Quelle tachê pouvez-vous rapidement accomplir? </h4><br>
-  Rechercher un item: <input type ="checkbox" name="fifthQ" value= "1"><br>
-  Créer un compte: <input type ="checkbox" name="fifthQ" value= "2"><br>
-  Afficher une publication: <input type ="checkbox" name="fifthQ" value= "3"><br>
+    Rechercher un item:
+    <input type ="checkbox" name="question5" value= "Rechercher-un-item"><br>
+    Créer un compte:
+    <input type ="checkbox" name="question5" value= "Créer-un-compte"><br>
+    Afficher une publication:
+    <input type ="checkbox" name="question5" value= "Afficher-une-publication"><br>
   <br>
 </div>
 
@@ -109,56 +115,56 @@ Mise en page: <input type ="radio" name="secondQ" value= "3"><br>
 
     <tr>
     <td>Cohérence</td>
-    <td><input type ="radio" name="sixQ" value= "1"></td>
-    <td><input type ="radio" name="sixQ" value= "2"></td>
-    <td><input type ="radio" name="sixQ" value= "3"></td>
-    <td><input type ="radio" name="sixQ" value= "4"></td>
-    <td><input type ="radio" name="sixQ" value= "5"></td>
+    <td><input type ="radio" name="question6a" value= "Non-Satisfaisant"></td>
+    <td><input type ="radio" name="question6a" value= "Peu-Satisfaisant"></td>
+    <td><input type ="radio" name="question6a" value= "Neutre"></td>
+    <td><input type ="radio" name="question6a" value= "Satisfaisant"></td>
+    <td><input type ="radio" name="question6a" value= "Très-Satisfaisant"></td>
     </tr>
 
     <tr>
     <td>Efficacité</td>
-    <td><input type ="radio" name="sixQu" value= "1"></td>
-    <td><input type ="radio" name="sixQu" value= "2"></td>
-    <td><input type ="radio" name="sixQu" value= "3"></td>
-    <td><input type ="radio" name="sixQu" value= "4"></td>
-    <td><input type ="radio" name="sixQu" value= "5"></td>
+    <td><input type ="radio" name="question6b" value= "Non-Satisfaisant"></td>
+    <td><input type ="radio" name="question6b" value= "Peu-Satisfaisant"></td>
+    <td><input type ="radio" name="question6b" value= "Neutre"></td>
+    <td><input type ="radio" name="question6b" value= "Satisfaisant"></td>
+    <td><input type ="radio" name="question6b" value= "Très-Satisfaisant"></td>
     </tr>
 
     <tr>
     <td>Fonctionnalité</td>
-    <td><input type ="radio" name="sixQe" value= "1"></td>
-    <td><input type ="radio" name="sixQe" value= "2"></td>
-    <td><input type ="radio" name="sixQe" value= "3"></td>
-    <td><input type ="radio" name="sixQe" value= "4"></td>
-    <td><input type ="radio" name="sixQe" value= "5"></td>
+    <td><input type ="radio" name="question6c" value= "Non-Satisfaisant"></td>
+    <td><input type ="radio" name="question6c" value= "Peu-Satisfaisant"></td>
+    <td><input type ="radio" name="question6c" value= "Neutre"></td>
+    <td><input type ="radio" name="question6c" value= "Satisfaisant"></td>
+    <td><input type ="radio" name="question6c" value= "Très-Satisfaisant"></td>
     </tr>
 
     <tr>
     <td>Fiabilité</td>
-    <td><input type ="radio" name="sixQeq" value= "1"></td>
-    <td><input type ="radio" name="sixQeq" value= "2"></td>
-    <td><input type ="radio" name="sixQeq" value= "3"></td>
-    <td><input type ="radio" name="sixQeq" value= "4"></td>
-    <td><input type ="radio" name="sixQeq" value= "5"></td>
+    <td><input type ="radio" name="question6d" value= "Non-Satisfaisant"></td>
+    <td><input type ="radio" name="question6d" value= "Peu-Satisfaisant"></td>
+    <td><input type ="radio" name="question6d" value= "Neutre"></td>
+    <td><input type ="radio" name="question6d" value= "Satisfaisant"></td>
+    <td><input type ="radio" name="question6d" value= "Très-Satisfaisant"></td>
     </tr>
 
     <tr>
     <td>Sécurité</td>
-    <td><input type ="radio" name="sixQet" value= "1"></td>
-    <td><input type ="radio" name="sixQet" value= "2"></td>
-    <td><input type ="radio" name="sixQet" value= "3"></td>
-    <td><input type ="radio" name="sixQet" value= "4"></td>
-    <td><input type ="radio" name="sixQet" value= "5"></td>
+    <td><input type ="radio" name="question6e" value= "Non-Satisfaisant"></td>
+    <td><input type ="radio" name="question6e" value= "Peu-Satisfaisant"></td>
+    <td><input type ="radio" name="question6e" value= "Neutre"></td>
+    <td><input type ="radio" name="question6e" value= "Satisfaisant"></td>
+    <td><input type ="radio" name="question6e" value= "Très-Satisfaisant"></td>
     </tr>
 
     <tr>
     <td>Utilisabilité</td>
-    <td><input type ="radio" name="sixQew" value= "1"></td>
-    <td><input type ="radio" name="sixQew" value= "2"></td>
-    <td><input type ="radio" name="sixQew" value= "3"></td>
-    <td><input type ="radio" name="sixQew" value= "4"></td>
-    <td><input type ="radio" name="sixQew" value= "5"></td>
+    <td><input type ="radio" name="question6f" value= "Non-Satisfaisant"></td>
+    <td><input type ="radio" name="question6f" value= "Peu-Satisfaisant"></td>
+    <td><input type ="radio" name="question6f" value= "Neutre"></td>
+    <td><input type ="radio" name="question6f" value= "Satisfaisant"></td>
+    <td><input type ="radio" name="question6f" value= "Très-Satisfaisant"></td>
     </tr>
 
 
@@ -171,11 +177,11 @@ Mise en page: <input type ="radio" name="secondQ" value= "3"><br>
   <h4>Commentaire:<br> <textarea rows="5" cols="30"> </textarea>
 </div>
 
+<center><button type="submit" class="btn btn-primary" id="bb">Submit</button></center>
+<p id="thanks"></p>
 
 </form></center>
 
-<center><button type="submit" class="btn btn-primary" id="bb">Submit</button></center>
-<p id="thanks"></p>
 <h6>Site Web conçu par Jessie Detchou</h6>
 <script src="/assets/action.js"></script>
 </body>
