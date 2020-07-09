@@ -1,0 +1,31 @@
+{
+    "LearnMore": {
+        "1": "Learn More"
+    },
+
+    "Welcome": {
+        "1": "Welcome to Soudwave! If you are here to learn about the basics of Music you are at the right place.",
+        "2": "To navigate the lessons look into the dropdown the menu name lessons.",
+        "3": "At SoundWave we are commited to helping you grew your interest in music. If you enjoy your free online lessons, feel free to sign up for in class lessons."
+    },
+
+
+    "signButton": {
+        "1": "Sign Up for in Class Lessons"
+    }, 
+
+    "drop":{
+        "1": "Music Theory",
+        "2": "Note Theory",
+        "3": "Music Genres"
+    },
+
+    "nav":{
+        "1": "Lessons",
+        "2": "Learn More",
+        "3": "Our Teachers",
+        "4": "Sign Up for in Class Lessons"
+    }
+
+    
+}

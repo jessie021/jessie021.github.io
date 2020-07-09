@@ -1,0 +1,29 @@
+{
+    "LearnMore": {
+        "1": "Plus de Leçon"
+    },
+
+    "Welcome": {
+        "1": "Bienvenue à Soudwave! Si vous êtes ici pour en apprendre davantage sur les bases de la musique, vous êtes au bon endroit.",
+        "2": "Pour parcourir les leçons, regardez dans le menu déroulant le nom du menu leçons.",
+        "3": "Chez SoundWave, nous nous engageons à vous aider à développer votre intérêt pour la musique. Si vous appréciez vos cours en ligne gratuits, n'hésitez pas à vous inscrire aux cours en classe."
+    },
+    
+    "signButton": {
+        "1": "Inscrivez-vous aux cours en classe"
+    },
+
+    "drop":{
+        "1": "Théorie de la musique",
+        "2": "Théorie des notes",
+        "3": "Genres musicaux"
+    },
+
+    "nav":{
+        "1": "Leçon",
+        "2": "Plus de Leçon",
+        "3": "Nos Instructeur",
+        "4": "Inscrivez-vous aux cours en classe"
+    }
+
+}
